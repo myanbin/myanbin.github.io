@@ -66,11 +66,11 @@ EditorState 和 ContentState 都是 Immutable  的对象，所以 Draft.js 提�
 
 举个例子，Draft.js 编辑器中的内容如下：
 
-![Draft.js 富文本编辑器]({{site.img_url}}/draftjs-editor.png){:.center}
+![Draft.js 富文本编辑器]({{site.img_url}}/2017-draftjs-editor.png){:.center}
 
 那么经过 `covertToRaw` 转换的 JSON 输出有两部分组成：**blocks** 和 **entityMap**，具体结构如下：
 
-![经过 covertToRaw 之后的编辑器内容：blocks]({{site.img_url}}/draftjs-blocks.png){:.center}
+![经过 covertToRaw 之后的编辑器内容：blocks]({{site.img_url}}/2017-draftjs-blocks.png){:.center}
 
 blocks 是一个数组，每一项代表当前内容中的一个块级元素（比如标题、段落、列表等）。其中 text 表示该块级元素中的纯文本，type 表示该块级元素的类型（`header-one` 表示一级标题、`unstyled` 表示普通段落、`atomic` 表示多媒体类的块级元素）。
 
@@ -103,7 +103,7 @@ blocks 是一个数组，每一项代表当前内容中的一个块级元素（�
 
 在 Draft.js 中，超链接、图片、视频等多媒体元素的数据通过 Entity 对象来表示，而 Entity 的位置信息存储于 entityRanges 数组中，其元数据可以通过 key 值，可以在 entityMap 中索引到。
 
-![经过 covertToRaw 之后的编辑器内容：entityMap]({{site.img_url}}/draftjs-entity.png){:.center}
+![经过 covertToRaw 之后的编辑器内容：entityMap]({{site.img_url}}/2017-draftjs-entity.png){:.center}
 
 entityMap 用于存储 Entity 类型的元数据。在本例中，key 值为 0 的 超链接 Entity，其元数据如下：
 

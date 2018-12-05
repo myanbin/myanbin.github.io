@@ -13,11 +13,11 @@ title: '仿 Stack Overflow 的问答网站'
 
 网站采用 MVC（模型-视图-控制器）的架构方式，使用了 WAMP（Windows、Apache、MySQL 和 PHP）技术栈进行开发。
 
-![MVC 示意图]({{site.img_url}}/qwench-mvc.png){:.center}
+![MVC 示意图]({{site.img_url}}/2011-qwench-mvc.png){:.center}
 
 ### 数据库设计
 
-![数据库 Scheme 图]({{site.img_url}}/qwench-db.png){:.center}
+![数据库 Scheme 图]({{site.img_url}}/2011-qwench-db.png){:.center}
 
 问题和回答分别存储于 questions 和 answers 两个表中，并分别设置用于记录用户投票记录的 questions\_votes 和 answers\_votes。
 
@@ -32,15 +32,15 @@ title: '仿 Stack Overflow 的问答网站'
 
 #### 首页
 
-![网站首页]({{site.img_url}}/qwench-home.png){:.center}
+![网站首页]({{site.img_url}}/2011-qwench-home.png){:.center}
 
 #### 用户
 
-![网站个人用户页]({{site.img_url}}/qwench-profile.png){:.center}
+![网站个人用户页]({{site.img_url}}/2011-qwench-profile.png){:.center}
 
 #### 问答
 
-![网站问题详情页]({{site.img_url}}/qwench-question.png){:.center}
+![网站问题详情页]({{site.img_url}}/2011-qwench-question.png){:.center}
 
 ### 使用开源项目
 

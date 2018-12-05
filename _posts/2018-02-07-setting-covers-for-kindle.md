@@ -12,7 +12,7 @@ tags: [read]
 
 第一种方法是使用 calibre。calibre 是一个开源的电子书管理工具，可以用来编辑、阅读和转换多种格式的电子书。下图是其主界面 UI：
 
-![calibre E-Book management]({{site.img_url}}/calibre.png){:.center}
+![calibre E-Book management]({{site.img_url}}/2018-calibre.png){:.center}
 
 用 calibre 来设置书籍的封面图是极其简单的：只需要选中一本书，然后点击工具栏上的“编辑元数据”按钮，然后在弹出的窗口中选择“更换封面”，最后保存即可。
 
@@ -24,7 +24,7 @@ tags: [read]
 
 Kindle 系统中的所有书籍封面会保存在 `\system\thumbnails` 目录下，如下图所示：
 
-![Kindle 书籍封面所在目录]({{site.img_url}}/kindle-thumbnails.png){:.center}
+![Kindle 书籍封面所在目录]({{site.img_url}}/2018-kindle-thumbnails.png){:.center}
 
 其中文件的命名规则是 `thumbnail_XXXXXXXXXX_EBOK_portrait.jpg`，其中 10 位编码的占位符表示该书在亚马逊网站上的编号。比如我们想设置《你一定爱读的极简欧洲史》这本书的封面，则可以在亚马逊官网上找到该书的[详情页面](https://www.amazon.cn/dp/B00E192518/)，同时便可在地址栏 URL 中找到类似 `B00E192518` 的编码。
 

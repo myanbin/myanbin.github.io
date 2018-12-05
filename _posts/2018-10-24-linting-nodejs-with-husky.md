@@ -44,7 +44,7 @@ $ yarn add husky --dev
 
 这样，当在终端输入 `git commit` 命令提交代码的时候，Lint 程序便会自动检查本次提交所修改的文件是否符合本项目的代码规范。如果代码不符合规范，便会拒绝提交代码。
 
-![使用 husky 后提交]({{site.img_url}}/husky.png){:.center}
+![使用 husky 后提交]({{site.img_url}}/2018-husky.png){:.center}
 
 
 如果想要跳过 Lint 程序，可以使用 `git commit -no-verify` 进行提交。

@@ -6,7 +6,7 @@ tags: [code]
 
 CNPM 是一个可以提供 npm 私有化部署的开源方案。它提供了 JavaScript 模块的存储、发布和下载，以及一个用于在线浏览的 Web 界面。
 
-![CNPM 示意图]({{site.img_url}}/cnpm-architecture.png){:.center}
+![CNPM 示意图]({{site.img_url}}/2018-cnpm-architecture.png){:.center}
 
 ## 为什么需要私有 npm
 

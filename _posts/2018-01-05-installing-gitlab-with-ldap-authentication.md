@@ -125,14 +125,14 @@ EOS
 
 这样，就简单的配置好了 LDAP 目录服务。打开浏览器访问 `http://localhost/` 便会看到在登录界面上多了一个 LDAP 的登录方式：
 
-![成功集成 LDAP 后的 GitLab 的登录界面]({{site.img_url}}/gitlab-login.png){:.center}
+![成功集成 LDAP 后的 GitLab 的登录界面]({{site.img_url}}/2018-gitlab-login.png){:.center}
 
 
 ## 三、进一步配置
 
 通过第二节，我们在 GitLab 上联通了 LDAP 认证服务，下面，我们将根据实际情况，进一步配置 GitLab 和 LDAP。
 
-![进一步配置 GitLab]({{site.img_url}}/gitlab-settings.png){:.center}
+![进一步配置 GitLab]({{site.img_url}}/2018-gitlab-settings.png){:.center}
 
 首先，为了安全我们需要关闭 GitLab 自己的注册功能，这样新用户只能通过 LDAP 认证的方式进行登陆。同时，需要将默认的管理员 root 修改为较复杂的用户名，以防攻击者暴力破解。
 

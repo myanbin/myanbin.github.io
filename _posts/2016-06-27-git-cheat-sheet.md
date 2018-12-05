@@ -10,7 +10,7 @@ tags: [code]
 
 ## 前言
 
-![Git 工作流]({{site.img_url}}/git-status.png){:.center}
+![Git 工作流]({{site.img_url}}/2016-git-status.png){:.center}
 
 Git 是一个分布式的版本控制系统，是指 Git 的远程仓库（Remote）和本地仓库（Repository）具有同等的地位，保存了代码的所有历史记录。上面的图来自[阮一峰的博客](http://www.ruanyifeng.com/blog/2015/12/git-cheat-sheet.html)，表示在 Git 的各个状态间相互切换的命令。
 
@@ -63,7 +63,7 @@ git config --global alias.st status
 
 本地的代码仓库由 Git 维护的三颗 Tree 组成。第一个是工作目录（Workspace），它持有实际的文件；第二个是暂存区（Index/Stage），它像一个缓存区，临时保存即将要提交的改动；第三个是代码仓库（Repository），它有一个 HEAD 指针，用于指向你最后一次提交的结果。
 
-![Git 的三个区域]({{site.img_url}}/git-areas.png){:.center}
+![Git 的三个区域]({{site.img_url}}/2016-git-areas.png){:.center}
 
 当你再工作目录中修改了某个文件后，使用 `git add` 命令，可以将你在工作目录下的改动添加到暂存区，以便准备提交。比如：
 
@@ -121,7 +121,7 @@ git commit --amend -m "second commit"
 
 如果要撤销工作区中的某个文件，则可以使用 `git reset` 和 `git checkout` 两个命令：
 
-![Git 工作流]({{site.img_url}}/git-basic.png){:.center}
+![Git 工作流]({{site.img_url}}/2016-git-basic.png){:.center}
 
 其中：
 
@@ -152,7 +152,7 @@ git checkout test
 
 ## Git 工作流
 
-![Git 工作流]({{site.img_url}}/git-workflow.png){:.center}
+![Git 工作流]({{site.img_url}}/2016-git-workflow.png){:.center}
 
 我们来看一个使用 Git 分支的例子：假如你正在为某个网站实现一个新的特性，正在此时，线上网站有一个严重的问题需要紧急修补，上级把这个任务指派给了你。这时，你需要把当前手头的工作暂停，来解决这个优先级更高的问题。
 
@@ -267,7 +267,7 @@ git push origin v2.0
 
 Cherry-pick 命令复制一个提交节点（可以是其他的分支上的）并在当前分支做一次完全一样的新提交。下图所示的命令表示，将 topic 分支上的一个提交 `2c33a` 添加到主分支 master 上，新的提交 SHA1 为 `f142b`。
 
-![Cherry pick 命令图解]({{site.img_url}}/git-cherrypick.png){:.center}
+![Cherry pick 命令图解]({{site.img_url}}/2016-git-cherrypick.png){:.center}
 
 `git rebase` 命令可以看作是一个自动化的 Cherry-pick 命令。它计算出一系列的提交，然后再以它们在其他地方以同样的顺序一个一个的 Cherry-picks 出它们。
 

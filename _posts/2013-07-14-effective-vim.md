@@ -13,7 +13,7 @@ Vim 是程序员最广泛使用的文本编辑器之一（在 Unix 文化里，�
 
 在 Vim 中，相对行号是提高移动效率的一大利器。通过它可以快速定位目标位置距当前光标的行数，然后使用类似 `7j` 或 `11k` 的命令进行移动操作。
 
-![使用相对行号后的 Vim]({{site.img_url}}/vimrc.png){:.center}
+![使用相对行号后的 Vim]({{site.img_url}}/2013-vimrc.png){:.center}
 
 下面的配置会使 Vim 对当前行显示绝对行号，而对其它行显示相对行号：
 
@@ -29,7 +29,7 @@ set relativenumber
 
 下面是网上一个流传广泛的 Vim 命令键位图（右键可以查看大图）：
 
-![Vim 快捷键]({{site.img_url}}/vim-classic.gif){:.center}
+![Vim 快捷键]({{site.img_url}}/2013-vim-classic.gif){:.center}
 
 然而这只是冰山一角。
 

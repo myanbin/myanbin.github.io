@@ -17,14 +17,14 @@ tags: [code]
 
 下图形象的描述了栈和队列的这些特点：
 
-![栈和队列]({{site.img_url}}/fifo.jpg){:.center}
+![栈和队列]({{site.img_url}}/2009-fifo.jpg){:.center}
 
 
 ## 二、栈和队列的抽象数据类型
 
 栈和队列特殊，然而它们依旧是表（Lists）的两种分支，我们依然可以用定义表的方法来定义栈和队列。下面是采用链式存储结构定义的栈和队列：
 
-![栈的链式描述]({{site.img_url}}/stack.jpg){:.center}
+![栈的链式描述]({{site.img_url}}/2009-stack.jpg){:.center}
 
 ~~~cpp
 typedef struct SNode    // 栈的节点结构
@@ -40,7 +40,7 @@ typedef struct          // 栈的表头结构
 } Stack;
 ~~~
 
-![队列的链式描述]({{site.img_url}}/queue.jpg){:.center}
+![队列的链式描述]({{site.img_url}}/2009-queue.jpg){:.center}
 
 ~~~cpp
 typedef struct QNode
@@ -66,7 +66,7 @@ typedef struct
 
 下图是链式栈的出栈示意图：
 
-![链式栈的出栈方式]({{site.img_url}}/stack-pop.jpg){:.center}
+![链式栈的出栈方式]({{site.img_url}}/2009-stack-pop.jpg){:.center}
 
 ~~~cpp
 int pushStack(Stack &S, char dataIn)
@@ -105,7 +105,7 @@ return S.top->data;
 
 入队，出队，取队首元素和队尾元素是队列的四种基本操作。入队和出队是构造队列或者销毁队列时采取的两种操作，它们或者增加或者减小了队列的规模，下图是链式队列的入队和出队示意图。
 
-![链式队列的入队和出队]({{site.img_url}}/queue-in.jpg){:.center}
+![链式队列的入队和出队]({{site.img_url}}/2009-queue-in.jpg){:.center}
 
 ~~~cpp
 int enQueue(Queue &Q, char dataIn)

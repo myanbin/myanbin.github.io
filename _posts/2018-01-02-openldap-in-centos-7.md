@@ -5,7 +5,7 @@ tags: [code]
 ---
 
 
-![开发协作平台总体架构图]({{site.img_url}}/architecture.png){:.center}
+![开发协作平台总体架构图]({{site.img_url}}/2018-architecture.png){:.center}
 
 最近，自主研发团队正在搭建一套基于 LDAP 统一认证的开发协作平台（包括代码托管服务 GitLab、私有 npm 服务 CNPM 等），以便达到用户统一管理、统一授权的效果。在这期间，我们阅读和参考了许多优秀的文档和资料，同时也遇到了一些知识瓶颈和技术难题，但最终顺利地完成了该平台搭建。因此我们认为有必要把这些经验整理和汇总成一些文档和笔记并分享出来，以使后来有需要的人参考使用，并践行开源自由之精神。
 
@@ -32,7 +32,7 @@ LDAP 中的信息按照目录信息树结构组织，树中的一个节点称之
 
 下面是一个典型的 LDAP 目录树结构，其中每个节点表示一个条目。在下一节中，我们将按照这个结构来配置一个简单的 LDAP 服务。
 
-![一个典型的 LDAP 目录树]({{site.img_url}}/ldap-tree.png){:.center}
+![一个典型的 LDAP 目录树]({{site.img_url}}/2018-ldap-tree.png){:.center}
 
 ## 二、OpenLDAP 的安装和配置
 
@@ -277,7 +277,7 @@ Alias /ldapadmin /usr/share/phpldapadmin/htdocs
 
 安装成功的话，在浏览器中访问 `http://localhost:8000/phpldapadmin/` 便会进入 phpLDAPadmin 管理页面：
 
-![phpLDAPadmin 安装成功后的登录界面]({{site.img_url}}/phpldapadmin.png){:.center}
+![phpLDAPadmin 安装成功后的登录界面]({{site.img_url}}/2018-phpldapadmin.png){:.center}
 
 按上面的方式进行登录后，就可以查看、新建、编辑和删除 `dc=xinhua,dc=org` 域下的所有条目了。
 
