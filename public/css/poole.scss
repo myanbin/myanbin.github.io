@@ -49,41 +49,41 @@ body {
 }
 
 /*
- * Add `class="night"` to enable Night Mode
+ * Add `class="dark-mode"` to enable Dark Mode
  * Copyright 2018 Ma Yanbin <myanbin@gmail.com>
  */
-body.night {
+body.dark-mode {
   background-color: #061f2f;
   color: #d3d4d4;
 }
-body.night h1,
-body.night h2,
-body.night h3,
-body.night h4,
-body.night h5,
-body.night h6 {
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode h4,
+body.dark-mode h5,
+body.dark-mode h6 {
   color: #ffffff;
 }
-body.night .message {
+body.dark-mode .message {
   background-color: #000000;
 }
-body.night hr,
-body.night .aside-title {
-  border-bottom: 1px solid #4f6071
+body.dark-mode hr,
+body.dark-mode .aside-title {
+  border-bottom: 1px solid #384248;
 }
-body.night pre,
-body.night code {
+body.dark-mode pre,
+body.dark-mode code {
   background-color: #0a121b;
   color: #c1f1f0;
 }
-body.night .highlight .nt {
+body.dark-mode .highlight .nt {
   color: #e8a0e8
 }
-body.night .highlight .k {
+body.dark-mode .highlight .k {
   color: #da5ada
 }
-body.night ul.related-posts a,
-body.night ul.related-posts .timestamp {
+body.dark-mode ul.related-posts a,
+body.dark-mode ul.related-posts .timestamp {
   background-color: #061f2f;
   color: #d3d4d4;
 }
