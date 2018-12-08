@@ -39,6 +39,7 @@ body {
 body {
   font-family: "Hiragino Sans GB", "Nato Sans", "Open Sans", 'Microsoft Yahei', sans-serif;
   background-color: #ffffff;
+  transition: background-color 0.5s ease;
   color: #161c1f;
   -webkit-text-size-adjust: 100%;
       -ms-text-size-adjust: 100%;
@@ -54,6 +55,7 @@ body {
  */
 body.dark-mode {
   background-color: #061f2f;
+  transition: background-color 0.5s ease;
   color: #d3d4d4;
 }
 body.dark-mode h1,
