@@ -110,11 +110,11 @@
   position: absolute;
   top: 0;
   left: 0;
-  padding: 1rem ;
+  padding: 1rem;
   color: #9a9a9a;
 }
 
-@media (min-width: 900px) {
+@media (min-width: 1000px) {
   .drawer > #_menu {
     display: none;
   }
@@ -220,7 +220,7 @@
  * Add the `sidebar-sticky` class to the sidebar's container to affix it the
  * contents to the bottom of the sidebar in tablets and up.
  */
-@media (min-width: 900px) {
+@media (min-width: 1000px) {
   .sidebar-sticky {
     position: absolute;
     right:  1rem;
@@ -251,7 +251,7 @@
 }
 
 
-@media (min-width: 900px) {
+@media (min-width: 1000px) {
   .content {
     max-width: 50rem;
     margin-left: 26rem;
