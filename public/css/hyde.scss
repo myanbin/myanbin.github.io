@@ -108,8 +108,8 @@
 #_menu {
   display: block;
   position: absolute;
-  top: 0rem;
-  left: 0rem;
+  top: 0;
+  left: 0;
   padding: 1rem ;
   color: #9a9a9a;
 }
@@ -124,7 +124,7 @@
     top: 0;
     left: 0;
     bottom: 0;
-    width: 20rem;
+    width: 22rem;
     /* Disable drawer positiioning on larger screens (already done via JS, but just to be sure) */
     -webkit-transform: translate3d(0,0,0) !important;
     -ms-transform: translate3d(0,0,0) !important;
@@ -254,7 +254,7 @@
 @media (min-width: 900px) {
   .content {
     max-width: 50rem;
-    margin-left: 22rem;
+    margin-left: 26rem;
     margin-right: 4rem;
   }
 }
@@ -262,7 +262,7 @@
 @media (min-width: 1500px) {
   .content {
     max-width: 56rem;
-    margin-left: 24rem;
+    margin-left: 26rem;
     margin-right: 4rem;
   }
 }
@@ -288,7 +288,9 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-
+.icon.icon-dark-mode::before {
+  content: "\e9d5";
+}
 .icon.icon-calendar::before {
   content: "\e953";
 }

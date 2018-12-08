@@ -37,7 +37,7 @@ body {
 }
 
 body {
-  font-family: "Nato Sans", "Open Sans", 'Microsoft Yahei', sans-serif;
+  font-family: "Hiragino Sans GB", "Nato Sans", "Open Sans", 'Microsoft Yahei', sans-serif;
   background-color: #ffffff;
   color: #161c1f;
   -webkit-text-size-adjust: 100%;
@@ -195,7 +195,7 @@ pre {
 code {
   padding: .18em 0.28em;
   /* Could be mistaken for a link if the user choses a similar link-color, so better no colored inline code. */
-  border-radius: 0px;
+  border-radius: 0;
   font-size: 1rem;
   background-color: #fdf6e3;
   color: #000000;
@@ -339,6 +339,11 @@ th {
   border-bottom: 1px solid;
 }
 
+.content a:focus {
+  text-decoration: none;
+  border-bottom: 1px dashed;
+}
+
 /*
  * Masthead
  *
@@ -397,14 +402,14 @@ th {
 }
 
 .post hr:not(.post-divide) {
-  margin: 1.5rem 0;
+  margin: 2rem 0;
   border: 0;
 }
 .post hr:not(.post-divide)::after {
   content: "\2756";
   display: block;
   text-align: center;
-  font-size: 1rem;
+  font-size: 1.5rem;
   color: #ddd;
 }
 

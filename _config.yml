@@ -2,8 +2,8 @@
 permalink:        /post/:title.html
 
 # Setup
-url:              //myanbin.github.io
-img_url:          //infp.github.io/images
+url:              https://myanbin.github.io
+img_url:          https://infp.github.io/images
 
 # Set to '' in case of hosting on `https://<your-github-name>.github.io`
 baseurl:          ''
@@ -12,14 +12,14 @@ title:            '饮冰先生'
 
 # Markdown enabled, however don't use more than one paragraph (enforced by `>`)
 description:      >
-  关于[代码](/code)、[生活](/life)、[宇宙](/read)和[一切](/)。
+  关于[代码](https://myanbin.github.io/code/)、[生活](https://myanbin.github.io/life/)、[宇宙](https://myanbin.github.io/read/)和[一切](/)。
 
 
 # Google Analytics tracking ID
 analytics:        'UA-32028925-2'
 
 # Fallback image and color if not overwritten for tag or post
-image:            /public/images/mountains.jpg
+image:            /public/images/hedin.jpg
 color:            '#dc322f'
 
 author:
@@ -34,7 +34,7 @@ author:
 
   # Markdown enabled, can use multiple paragraphs (enabled by `|`)
   about:          |
-    我是饮冰先生，热爱电脑技术和黑客文化，喜欢与人交流分享开源思想和 IT 技术。我的微博是 [@孺子牛骑士](http://weibo.com/yianbin)
+    我是饮冰先生，热爱电脑技术和黑客文化，喜欢与人交流分享开源思想和 IT 技术。我的微博是 [@孺子牛骑士](https://weibo.com/yianbin)
 
 
 compress_html:
