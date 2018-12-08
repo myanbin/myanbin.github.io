@@ -250,16 +250,24 @@
   // border-left: 0.3rem solid #fff;
 }
 
+@media (min-width: 800px) {
+  .content {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+}
+
+
 @media (min-width: 1000px) {
   .content {
-    margin-left: 24rem;
+    margin-left: 4rem;
     margin-right: 4rem;
   }
 }
 
 @media (min-width: 1200px) {
   .content {
-    max-width: 50rem;
+    max-width: 52rem;
     margin-left: 26rem;
     margin-right: 4rem;
   }
