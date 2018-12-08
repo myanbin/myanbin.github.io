@@ -39,7 +39,7 @@
   color: rgba(255,255,255,.75);
   background-color: #202020 !important;
   text-align: left;
-
+  width: 20rem;
   background-size: cover;
   background-position: center center;
 }
@@ -59,7 +59,7 @@
   position: fixed;
   bottom: 0;
   top: 0;
-  left: -21rem;
+  left: -20rem;
   width: 20rem;
   will-change: transform;
   box-shadow: 0.25rem 0 0.3rem rgba(0, 0, 0, 0.15)
@@ -114,7 +114,7 @@
   color: #9a9a9a;
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 1200px) {
   .drawer > #_menu {
     display: none;
   }
@@ -250,8 +250,14 @@
   // border-left: 0.3rem solid #fff;
 }
 
-
 @media (min-width: 1000px) {
+  .content {
+    margin-left: 24rem;
+    margin-right: 4rem;
+  }
+}
+
+@media (min-width: 1200px) {
   .content {
     max-width: 50rem;
     margin-left: 26rem;
