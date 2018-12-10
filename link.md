@@ -2,7 +2,7 @@
 layout: page
 title: "友链"
 permalink: link.html
-order: 5
+sequence: 5
 ---
 
 

@@ -34,7 +34,7 @@
         `layout: page` in the front-matter. See readme for usage.
       {% endcomment %}
 
-      {% assign pages_list = site.pages | sort: "order" %}
+      {% assign pages_list = site.pages | sort: "sequence" %}
       {% for node in pages_list %}
         {% if node.title != null %}
           {% if node.layout == "page" %}
@@ -43,7 +43,6 @@
         {% endif %}
       {% endfor %}
 
-      <a class="sidebar-nav-item" href="{{site.baseurl}}/photo.html">影集</a>
       <a class="sidebar-nav-item" href="https://github.com/{{site.author.github}}/talk/issues/new">留言</a>
       {% comment %}
         Add GitHub talk page link at last.
