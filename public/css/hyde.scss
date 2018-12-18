@@ -36,7 +36,7 @@
   z-index: 4;
   text-align: center;
   padding: 2rem 1rem;
-  color: rgba(255,255,255,.75);
+  color: #c3c3c3;
   background-color: #202020 !important;
   text-align: left;
   width: 20rem;
@@ -148,35 +148,37 @@
   margin-top: 0;
   font-size: 2rem;
 }
-.sidebar-about a:hover {
-  text-decoration: none;
-}
 .sidebar-about img {
-  height: 50px;
+  height: 55px;
   width: auto;
   margin-left: -5px; /* 使標題與其他元素視覺上左對齊 */
+}
+.sidebar-about a {
+  color: #c3c3c3 !important;
+}
+.sidebar-about a:hover {
+  text-decoration: none;
 }
 
 /* Sidebar nav */
 .sidebar-nav {
   margin-bottom: 1.25rem;
 }
-.sidebar-nav-item {
-  font-weight: 500;
-  display: block;
-  color: #e74c3c;
-  font-size: 1.2rem;
-  padding: 10px;
+.sidebar-nav-item > a {
+  display: inline-block;
+  color: #fff;
+  line-height: 1.6;
   text-decoration: none;
+  border-bottom: 2px solid #c3c3c3;
 }
 
-.sidebar-nav-item:hover {
+.sidebar-nav-item > a:hover {
   text-decoration: none;
-  background-color: #fff;
+  border-bottom: 2px solid #fff;
 }
 
-.sidebar-nav-item.active {
-  background-color: #fff;
+.sidebar-nav-item > a.active {
+  border-bottom: 2px solid #fff;
 }
 
 /* Disable the "white glow" that is used to make the laurel wreaths distinct form the background */
@@ -189,6 +191,7 @@
   margin-bottom: 1.25rem;
 }
 .sidebar-social > a {
+  color: #fff;
   font-size: 1.4rem;
   line-height: 1.4rem;
   margin-right: 1rem;
