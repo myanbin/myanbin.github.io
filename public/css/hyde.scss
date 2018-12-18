@@ -133,11 +133,6 @@
   }
 }
 
-/* Sidebar links */
-.sidebar a {
-  color: #fff;
-}
-
 /*.sidebar a:hover, .sidebar a:focus {
   text-decoration: none;
 }*/
@@ -164,9 +159,13 @@
 .sidebar-nav {
   margin-bottom: 1.25rem;
 }
+.sidebar-nav-item {
+  margin-bottom: 0.4rem;
+}
 .sidebar-nav-item > a {
   display: inline-block;
   color: #fff;
+  font-size: 1.2rem;
   line-height: 1.6;
   text-decoration: none;
   border-bottom: 2px solid #c3c3c3;
