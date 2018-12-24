@@ -87,6 +87,7 @@ body.dark-mode .highlight .k {
 body.dark-mode ul.related-posts a,
 body.dark-mode ul.related-posts .timestamp {
   background-color: #061f2f;
+  transition: background-color 0.5s ease;
   color: #d3d4d4;
 }
 

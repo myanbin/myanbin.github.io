@@ -189,11 +189,13 @@
 .sidebar-social {
   margin-bottom: 1.25rem;
 }
-.sidebar-social > a {
+.sidebar-social > a,
+.sidebar-social > span {
   color: #fff;
   font-size: 1.4rem;
   line-height: 1.4rem;
   margin-right: 1rem;
+  cursor: pointer;
 }
 .sidebar-social > a:last-child {
   margin-right: 0;
