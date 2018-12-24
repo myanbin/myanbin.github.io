@@ -68,6 +68,7 @@ body.dark-mode h6 {
 }
 body.dark-mode .message {
   background-color: #000000;
+  transition: background-color 0.5s ease;
 }
 body.dark-mode hr,
 body.dark-mode .aside-title {
@@ -76,6 +77,7 @@ body.dark-mode .aside-title {
 body.dark-mode pre,
 body.dark-mode code {
   background-color: #0a121b;
+  transition: background-color 0.5s ease;
   color: #c1f1f0;
 }
 body.dark-mode .highlight .nt {
@@ -317,6 +319,7 @@ th {
   margin-bottom: 1rem;
   padding: 1rem;
   background-color: #f2f2f2;
+  transition: background-color 0.5s ease;
   margin-left: -1rem;
   margin-right: -1rem;
 }
@@ -513,12 +516,14 @@ ul.related-posts .heading::after {
 
 ul.related-posts a {
   background-color: #ffffff;
+  transition: background-color 0.5s ease;
   color: #000000;
 }
 ul.related-posts .timestamp {
   float: right;
   padding-left: 5px;
   background-color: #ffffff;
+  transition: background-color 0.5s ease;
   position: relative;
   z-index: 1;
 }
