@@ -273,12 +273,15 @@
     margin-left: 26rem;
     margin-right: 4rem;
   }
+  .sidebar {
+    width: 22rem;
+  }
 }
 
 @media (min-width: 1600px) {
   .content {
     max-width: 56rem;
-    margin-left: 26rem;
+    margin-left: 28rem;
     margin-right: 4rem;
   }
   .sidebar {
