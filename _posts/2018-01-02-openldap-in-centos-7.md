@@ -39,8 +39,8 @@ LDAP 中的信息按照目录信息树结构组织，树中的一个节点称之
 本文中相关操作系统及依赖包的版本如下：
 
 * centos-release-7-4.1708.el7.centos.x86_64
-* openldap-clients-2.4.44-5.el7.x86_64
-* openldap-servers-2.4.44-5.el7.x86_64
+* openldap-clients-2.4.44-5.el7.x86_64：包含客户端程序，用来访问和修改 OpenLDAP 目录
+* openldap-servers-2.4.44-5.el7.x86_64：包含主 LDAP 服务器 slapd 和同步服务器 slurpd 服务器、迁移脚本和相关文件
 
 第一步，需要切换到 root 账号来安装 OpenLDAP 相关程序包，并启动服务：
 
@@ -73,6 +73,7 @@ $ ldapadd -Y EXTERNAL -H ldapi:/// -f chrootpw.ldif
 第三步，我们需要向 LDAP 中导入一些基本的 Schema。这些 Schema 文件位于 `/etc/openldap/schema/` 目录中，定义了我们以后创建的条目可以使用哪些属性：
 
 ```terminal
+$ ldapadd -Y EXTERNAL -H ldapi:/// -f /etc/openldap/schema/core.ldif
 $ ldapadd -Y EXTERNAL -H ldapi:/// -f /etc/openldap/schema/cosine.ldif
 $ ldapadd -Y EXTERNAL -H ldapi:/// -f /etc/openldap/schema/nis.ldif
 $ ldapadd -Y EXTERNAL -H ldapi:/// -f /etc/openldap/schema/inetorgperson.ldif
@@ -82,8 +83,8 @@ $ ldapadd -Y EXTERNAL -H ldapi:/// -f /etc/openldap/schema/inetorgperson.ldif
 
 ```terminal
 $ slappasswd
-New password: 
-Re-enter new password: 
+New password:
+Re-enter new password:
 {SSHA}z/rsbmAjVtLlWeUB0xS5itLPI0VA1akD
 
 $ vim chdomain.ldif
@@ -95,22 +96,22 @@ replace: olcAccess
 olcAccess: {0}to * by dn.base="gidNumber=0+uidNumber=0,cn=peercred,cn=external,cn=auth"
   read by dn.base="cn=admin,dc=xinhua,dc=io" read by * none
 
-dn: olcDatabase={2}hdb,cn=config
+dn: olcDatabase={2}mdb,cn=config
 changetype: modify
 replace: olcSuffix
 olcSuffix: dc=xinhua,dc=io
 
-dn: olcDatabase={2}hdb,cn=config
+dn: olcDatabase={2}mdb,cn=config
 changetype: modify
 replace: olcRootDN
 olcRootDN: cn=admin,dc=xinhua,dc=io
 
-dn: olcDatabase={2}hdb,cn=config
+dn: olcDatabase={2}mdb,cn=config
 changetype: modify
 add: olcRootPW
 olcRootPW: {SSHA}z/rsbmAjVtLlWeUB0xS5itLPI0VA1akD
 
-dn: olcDatabase={2}hdb,cn=config
+dn: olcDatabase={2}mdb,cn=config
 changetype: modify
 add: olcAccess
 olcAccess: {0}to attrs=userPassword,shadowLastChange by
@@ -130,7 +131,7 @@ dn: dc=xinhua,dc=io
 objectClass: top
 objectClass: dcObject
 objectclass: organization
-o: Xinhua News Agency
+o: XINHUA.IO
 dc: xinhua
 
 dn: cn=admin,dc=xinhua,dc=io
@@ -189,7 +190,7 @@ adding new entry "cn=Secretary,ou=Group,dc=xinhua,dc=org"
 我们也可以使用 `ldapsearch` 命令来查看 LDAP 目录服务中的所有条目信息：
 
 ```terminal
-# ldapsearch -x -b "dc=xinhua,dc=io" -H ldap://127.0.0.1
+$ ldapsearch -x -b "dc=xinhua,dc=io" -H ldap://127.0.0.1
 # extended LDIF
 #
 # LDAPv3
@@ -211,7 +212,7 @@ dc: xinhua
 如果要删除一个条目，可以按下面的命令操作：
 
 ```sh
-# ldapdelete -x -W -D 'cn=admin,dc=xinhua,dc=io' "uid=ada,ou=People,dc=xinhua,dc=io"
+$ ldapdelete -x -W -D 'cn=admin,dc=xinhua,dc=io' "uid=ada,ou=People,dc=xinhua,dc=io"
 ```
 
 ## 三、使用 phpLDAPadmin 来管理 LDAP 服务

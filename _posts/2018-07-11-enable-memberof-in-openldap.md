@@ -41,7 +41,7 @@ olcMemberOfMemberOfAD: memberOf
 
 ```dockerfile
 FROM osixia/openldap
-LABEL maintainer "Yanbin Ma <myanbin@gmail.com>"
+LABEL maintainer "Ma Yanbin <myanbin@gmail.com>"
 
 ENV LDAP_ORGANISATION="XINHUA.IO" LDAP_DOMAIN="xinhua.io" LDAP_ADMIN_PASSWORD="Passw0rd"
 
