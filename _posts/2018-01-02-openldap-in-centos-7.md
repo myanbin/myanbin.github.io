@@ -261,7 +261,6 @@ $ docker run --name ldap_core -p 389:389 -p 636:636 --env LDAP_ORGANISATION="XIN
 $ docker run --name ldap_web -p 80:80 -p 443:443 --link ldap_core:ldap_core --env PHPLDAPADMIN_LDAP_HOSTS=ldap_core --detach osixia/phpldapadmin
 ```
 
-在生产环境中，我们使用 Docker 的方式来部署 OpenLDAP。
 
 ## 五、参考资料
 
