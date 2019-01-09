@@ -19,7 +19,7 @@ sequence: 9
 {% endif %}
 
 
-我是饮冰先生，毕业于北京邮电大学计算机专业，目前在中国北京居住和工作，从事 IT 行业。我喜爱阅读、美食、电影和一切美的事物，也喜欢哲学和历史。我是一个具有 [INFP](http://www.personalitypage.com/INFP.html) 性格的人。
+我是饮冰先生，毕业于北京邮电大学计算机专业，目前在中国北京居住和工作，从事 IT 行业。我喜爱阅读、电影、数码技术和一切美的事物，也喜欢哲学和历史。我是一个具有 [INFP](http://www.personalitypage.com/INFP.html) 性格的人。
 
 
 ## 更加了解我
@@ -43,7 +43,12 @@ sequence: 9
 
 欢迎关注我的微博 [@孺子牛骑士](https://weibo.com/{{site.author.weibo}})，或发邮件到 [{{site.author.email}}](mailto:{{site.author.email}}) 与我联系。你也可以通过页面左下角的链接给我留言。
 
-
 <div class="message">
 身份声明：<code>AEF8 AF62 E961 00B5 A9F3  0A07 5736 AE9A 8AB7 83F6</code> 为本人所持 GPG 公钥指纹。
 </div>
+
+## 请我喝一杯咖啡
+
+若你觉得本人所创造的内容对你有所帮助，可考虑略表心意，通过以下赞赏码来支持我的博客。
+
+![Buy me a coffee](/public/images/buymeacoffee.png){:.center}
