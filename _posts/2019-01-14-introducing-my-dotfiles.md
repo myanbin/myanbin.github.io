@@ -36,6 +36,10 @@ $ sh -c "$(curl -fsSL https://raw.githubusercontent.com/myanbin/dotfiles/master/
 
 Vim 是程序员最广泛使用的文本编辑器之一，也是我最喜欢的编辑器。
 
+![Vim 使用界面]({{site.img_url}}/2019-dotfiles-vim.png){:.center}
+
+上面是 Vim 的使用洁面，如果想了解更多关于 Vim 的配置信息，可以查看 dotfiles 中的 `.vimrc` 文件。
+
 ## Git
 
 Git 也许是程序员们日常开发中频繁使用的工具，所以我针对 Git 的常用命令设计了一系列简洁的别名。通过一段时间的学习和适应之后，可以高效地完成常用命令的输入。具体的配置信息及解释如下：
@@ -43,50 +47,70 @@ Git 也许是程序员们日常开发中频繁使用的工具，所以我针对 
 ```ini
 [alias]
 
-	a     = add
-	aa    = add -A                                # Stage all changes.
-	amend = commit --amend
-	ap    = add -p                                # Stage changes chunk by chunk
-	b     = branch -v                             # Shorthand for branch (verbose)
-	ba    = branch -av
-	c     = commit
-	ca    = !git add -A && git commit             # Commit all changes.
-	co    = checkout
-	d     = diff                                  # Diff unstaged changes
-	da    = diff HEAD                             # Diff unstaged and staged changes
-	dc    = diff --cached                         # Diff staged changes
-	ds    = diff --stat
-	dw    = diff --color-words                    # Show a word diff instead a line
-	dump  = cat-file -p                           # Show content of git object
-	f     = fetch
-	# Find commits by commit message
-	find  = "!f() { git log --pretty=basic --name-status --grep=$1; }; f"
-	fixup = commit --fixup
-	g     = log --graph --pretty=basic            # Show basic graph.
-	git   = !exec git                             # Allow `$ git git git...`
-	h     = help                                  # Shorthand for help
-	hi    = !echo 'hello, welcome to use myanbin/dotfiles'
-	l     = log --pretty=basic                    # Show basic log. (oneline)
-	ll    = log --pretty=intermediate --stat      # Show intermediate log.
-	m     = merge
-	new   = checkout -b                           # Create a new branch.
-	p     = pull
-	pick  = cherry-pick
-	pop   = reset HEAD^                           # Pop your last commit out of the history
-	r     = remote -v                             # Shorthand for remote (verbose)
-	rc    = rebase --continue
-	rs    = rebase --skip
-	s     = status
-	sh    = show
-	type  = cat-file -t                           # Show type of git object
-	undo  = reset HEAD~                           # Undo last commit, with files in uncommitted state
-	who   = shortlog --no-merges --email --numbered --summary
-	zip   = archive --format=zip -o latest.zip HEAD
+    a     = add
+    aa    = add -A                                # Stage all changes.
+    amend = commit --amend
+    ap    = add -p                                # Stage changes chunk by chunk
+    b     = branch -v                             # Shorthand for branch (verbose)
+    ba    = branch -av
+    c     = commit
+    ca    = !git add -A && git commit             # Commit all changes.
+    co    = checkout
+    d     = diff                                  # Diff unstaged changes
+    da    = diff HEAD                             # Diff unstaged and staged changes
+    dc    = diff --cached                         # Diff staged changes
+    ds    = diff --stat
+    dw    = diff --color-words                    # Show a word diff instead a line
+    dump  = cat-file -p                           # Show content of git object
+    f     = fetch
+    # Find commits by commit message
+    find  = "!f() { git log --pretty=basic --name-status --grep=$1; }; f"
+    fixup = commit --fixup
+    g     = log --graph --pretty=basic            # Show basic graph.
+    git   = !exec git                             # Allow `$ git git git...`
+    h     = help                                  # Shorthand for help
+    hi    = !echo 'hello, welcome to use myanbin/dotfiles'
+    l     = log --pretty=basic                    # Show basic log. (oneline)
+    ll    = log --pretty=intermediate --stat      # Show intermediate log.
+    m     = merge
+    new   = checkout -b                           # Create a new branch.
+    p     = pull
+    pick  = cherry-pick
+    pop   = reset HEAD^                           # Pop your last commit out of the history
+    r     = remote -v                             # Shorthand for remote (verbose)
+    rc    = rebase --continue
+    rs    = rebase --skip
+    s     = status
+    sh    = show
+    type  = cat-file -t                           # Show type of git object
+    undo  = reset HEAD~                           # Undo last commit, with files in uncommitted state
+    who   = shortlog --no-merges --email --numbered --summary
+    zip   = archive --format=zip -o latest.zip HEAD
 ```
+
+如果想了解更多关于 Git 的配置信息，可以查看 dotfiles 中的 `.gitconfig` 文件。
 
 ## tmux
 
 tmux 是一个终端复用工具，用户可以通过 tmux 在一个终端内管理多个分离的会话，窗口及面板，对于同时使用多个命令行，或执行多个任务时非常方便。同时，当 SSH 连接中断后，tmux 能够保存当前会话，以便下次连接时自动恢复。
 
+![tmux 使用界面]({{site.img_url}}/2019-dotfiles-tmux.png){:.center}
 
-上面是我定制的 tmux 使用界面，具体配置可以查看 dotfiles 中的 [tmux.config](https://github.com/myanbin/dotfiles/blob/master/.tmux.conf) 文件。
+
+上面是我定制的 tmux 使用界面，具体配置可以查看 dotfiles 中的 `.tmux.config` 文件。
+
+
+## 如何升级
+
+我会不定期的更新我的 dotfiles 仓库，如果你也想应用这些更新的话，需要手动进行如下的操作：
+
+```terminal
+$ cd ~/.dotfiles
+$ git p
+```
+
+你的 `*.local` 配置文件不会被覆盖。
+
+## 链接
+
+* [myanbin/dotfiles](https://github.com/myanbin/dotfiles)
