@@ -47,7 +47,7 @@ sequence: 9
 身份声明：<code>AEF8 AF62 E961 00B5 A9F3  0A07 5736 AE9A 8AB7 83F6</code> 为本人所持 GPG 公钥指纹。
 </div>
 
-## 请我喝一杯咖啡{#buymeacoffee}
+## <a name="buymeacoffee"></a>请我喝一杯咖啡 {#buymeacoffee}
 
 如若阁下觉得本站内容对你有所帮助，可考虑略表心意，通过以下赞赏码来支持本人。
 
