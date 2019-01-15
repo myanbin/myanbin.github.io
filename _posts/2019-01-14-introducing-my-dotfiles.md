@@ -38,7 +38,7 @@ Vim 是程序员最广泛使用的文本编辑器之一，也是我最喜欢的�
 
 ![Vim 使用界面]({{site.img_url}}/2019-dotfiles-vim.png){:.center}
 
-上面是 Vim 的使用洁面，如果想了解更多关于 Vim 的配置信息，可以查看 dotfiles 中的 `.vimrc` 文件。
+上面是 Vim 的使用洁面，如果想了解更多关于 Vim 的配置信息，可以查看 [dotfiles](https://github.com/myanbin/dotfiles) 中的 `.vimrc` 文件。
 
 ## Git
 
@@ -88,7 +88,7 @@ Git 也许是程序员们日常开发中频繁使用的工具，所以我针对 
     zip   = archive --format=zip -o latest.zip HEAD
 ```
 
-如果想了解更多关于 Git 的配置信息，可以查看 dotfiles 中的 `.gitconfig` 文件。
+如果想了解更多关于 Git 的配置信息，可以查看 [dotfiles](https://github.com/myanbin/dotfiles) 中的 `.gitconfig` 文件。
 
 ## tmux
 
@@ -97,7 +97,7 @@ tmux 是一个终端复用工具，用户可以通过 tmux 在一个终端内管
 ![tmux 使用界面]({{site.img_url}}/2019-dotfiles-tmux.png){:.center}
 
 
-上面是我定制的 tmux 使用界面，具体配置可以查看 dotfiles 中的 `.tmux.config` 文件。
+上面是我定制的 tmux 使用界面，具体配置可以查看 [dotfiles](https://github.com/myanbin/dotfiles) 中的 `.tmux.config` 文件。
 
 
 ## 如何升级

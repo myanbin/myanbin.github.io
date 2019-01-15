@@ -16,7 +16,7 @@ life:
   image: /public/images/hedin.jpg
   color: '#f44336'
   description: |
-    简单生活，高贵思考（Simple living, noble thinking）————这是上学时我从西方哲学家斯宾诺莎那里得到的名言，并成了我追求简朴而具有理性思想的生活方式的座右铭。
+    简单生活，高贵思考（Simple living, noble thinking）——这是上学时我从西方哲学家斯宾诺莎那里得到的名言，并成了我追求简朴而具有理性思想的生活方式的座右铭。
 
 code:
   name: 代码
