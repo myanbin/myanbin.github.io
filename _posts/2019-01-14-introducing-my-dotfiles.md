@@ -7,17 +7,13 @@ tags: [code]
 
 对于常年在 Linux 或 macOS 上写代码的程序员来说，总避免不了要使用 Vim、Git、tmux 等命令行工具。同时为了让工具更加适合自己，程序员们通常会根据自己的喜好和习惯给这些工具定义一些快捷键、默认配置等。而 dotfiles 正是用来保存这些配置文件（通常是以点开头的隐藏文件，位于用户家目录 `~` 中），这样便可以在新的环境上快速还原程序员的开发环境。
 
-本文将主要介绍我已经使用了多年的 [dotfiles](https://github.com/myanbin/dotfiles)。
+本文将主要介绍我已经使用了多年的 [dotfiles](https://github.com/myanbin/dotfiles)。欢迎大家使用，如果你有什么好的建议，可以在项目中提 Issue。
 
 ## 安装 dotfiles
 
-在类 Unix 系统上，我推荐使用 zsh 来代替默认的 bash，并且使用 [Oh My Zsh](https://github.com/robbyrussell/oh-my-zsh) 来初始化你的 zsh 环境。你可以使用下面的命令来安装：
+在类 Unix 系统上，我推荐使用 zsh 来代替默认的 bash，并且使用 [Oh My Zsh](https://github.com/robbyrussell/oh-my-zsh) 来初始化你的 zsh 环境。
 
-```terminal
-$ sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-```
-
-接着，运行以下命令来安装 dotfiles：
+首先，需要运行下面的命令来安装 dotfiles：
 
 ```terminal
 $ sh -c "$(curl -fsSL https://raw.githubusercontent.com/myanbin/dotfiles/master/INSTALL.sh)"
@@ -34,11 +30,11 @@ $ sh -c "$(curl -fsSL https://raw.githubusercontent.com/myanbin/dotfiles/master/
 
 ## Vim
 
-Vim 是程序员最广泛使用的文本编辑器之一，也是我最喜欢的编辑器。
+Vim 是程序员最广泛使用的文本编辑器之一，也是我最喜欢的编辑器。我喜欢简洁流畅、不需要太多插件的 Vim，所以配置了如下的 Vim：
 
 ![Vim 使用界面]({{site.img_url}}/2019-dotfiles-vim.png){:.center}
 
-上面是 Vim 的使用洁面，如果想了解更多关于 Vim 的配置信息，可以查看 [dotfiles](https://github.com/myanbin/dotfiles) 中的 `.vimrc` 文件。
+如果想了解更多关于 Vim 的配置信息，可以查看 [dotfiles](https://github.com/myanbin/dotfiles) 中的 `.vimrc` 文件。
 
 ## Git
 

@@ -19,7 +19,7 @@ sequence: 9
 {% endif %}
 
 
-我是饮冰先生，毕业于北京邮电大学计算机专业，目前在中国北京居住和工作，从事 IT 行业。我喜爱阅读、电影、数码技术和一切美的事物，也喜欢哲学和历史。我是一个具有 [INFP](http://www.personalitypage.com/INFP.html) 性格的人。
+我是<u>饮冰先生</u>，毕业于北京邮电大学计算机专业，目前在中国北京居住和工作，从事 IT 行业。我喜爱阅读、电影、数码技术和一切美的事物，也喜欢哲学和历史。我是一个具有 [INFP](http://www.personalitypage.com/INFP.html) 性格的人。
 
 
 ## 更加了解我
@@ -33,7 +33,7 @@ sequence: 9
 
 花时间进行写作是一件很有意义也很值得去做的事。我希望能在这里来分享技术、记录生活，同时也希望能结交到更多朋友。
 
-本站使用 GitHub Page 和 Jekyll 进行搭建，如果你喜欢这个博客，可以 Fork 我的[源代码](https://github.com/myanbin/myanbin.github.io)进行修改。
+本站使用 GitHub Page 和 Jekyll 进行搭建，如果你喜欢这个博客，可以下载我的[源代码](https://github.com/myanbin/myanbin.github.io)进行修改。
 
 ## 版权说明
 
