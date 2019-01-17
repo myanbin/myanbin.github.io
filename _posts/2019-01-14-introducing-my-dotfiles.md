@@ -93,7 +93,7 @@ tmux 是一个终端复用工具，用户可以通过 tmux 在一个终端内管
 ![tmux 使用界面]({{site.img_url}}/2019-dotfiles-tmux.png){:.center}
 
 
-上面是我定制的 tmux 使用界面，具体配置可以查看 [dotfiles](https://github.com/myanbin/dotfiles) 中的 `.tmux.config` 文件。
+上面是我定制的 tmux 使用界面，具体配置可以查看 [dotfiles](https://github.com/myanbin/dotfiles) 中的 `.tmux.conf` 文件。
 
 
 ## 如何升级
