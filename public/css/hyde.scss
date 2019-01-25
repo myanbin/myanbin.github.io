@@ -148,6 +148,7 @@
   height: 55px;
   width: auto;
   margin-left: -5px; /* 使標題與其他元素視覺上左對齊 */
+  user-select: none;
 }
 .sidebar-about a {
   color: #c3c3c3 !important;
