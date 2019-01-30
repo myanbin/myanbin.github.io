@@ -414,10 +414,11 @@ th {
   border: 0;
 }
 .post hr:not(.post-divide)::after {
-  content: "\2756";
+  content: "...";
   display: block;
   text-align: center;
   font-size: 1.5rem;
+  letter-spacing: .6em;
   color: #ddd;
 }
 
