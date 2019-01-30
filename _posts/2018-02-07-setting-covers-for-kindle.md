@@ -1,6 +1,6 @@
 ---
 layout: post
-title: '给 Kindle 电子书设置封面的两种方法'
+title: '两种方法来给 Kindle 设置图书封面'
 tags: [read]
 ---
 
