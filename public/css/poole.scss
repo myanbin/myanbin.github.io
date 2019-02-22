@@ -205,7 +205,7 @@ code {
   /* Could be mistaken for a link if the user choses a similar link-color, so better no colored inline code. */
   border-radius: 0;
   font-size: 1rem;
-  background-color: #fdf6e3;
+  background-color: #f4f4f4;
   color: #000000;
 }
 pre {
@@ -214,7 +214,6 @@ pre {
   margin-bottom: 1rem;
   padding: 1rem;
   line-height: 1.2;
-  background-color: #fdf6e3;
   /* Prevent code linebreaks and allow side-scrolling (much better readability on mobile) */
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;

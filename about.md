@@ -44,7 +44,7 @@ sequence: 9
 请发邮件到 [{{site.author.email}}](mailto:{{site.author.email}}) 与我联系。你也可以通过页面左下角的链接给我留言。
 
 <div class="message">
-身份声明：<code>AEF8 AF62 E961 00B5 A9F3  0A07 5736 AE9A 8AB7 83F6</code> 为本人所持 GPG 公钥指纹。
+身份声明：<span style="font-weight: bold; font-family: 'Source Code Pro', 'Andale Mono', Consolas, monospace">AEF8 AF62 E961 00B5 A9F3  0A07 5736 AE9A 8AB7 83F6</span> 为本人所持有的 PGP 公钥指纹'
 </div>
 
 ## 请我喝一杯咖啡 {#buymeacoffee}
