@@ -264,7 +264,7 @@
 @media (min-width: 1200px) {
   .content {
     max-width: 52rem;
-    margin-left: 26rem;
+    margin-left: 25rem;
     margin-right: 4rem;
   }
 }
@@ -272,7 +272,7 @@
 @media (min-width: 1400px) {
   .content {
     max-width: 54rem;
-    margin-left: 26rem;
+    margin-left: 25rem;
     margin-right: 4rem;
   }
   .sidebar {
@@ -283,7 +283,7 @@
 @media (min-width: 1600px) {
   .content {
     max-width: 56rem;
-    margin-left: 28rem;
+    margin-left: 27rem;
     margin-right: 4rem;
   }
   .sidebar {
@@ -344,6 +344,7 @@
 }
 
 .icon.icon-rss,
+.icon.icon-dark-mode,
 .icon.icon-facebook {
   font-size: 0.95em;
 }

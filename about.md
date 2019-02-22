@@ -41,7 +41,7 @@ sequence: 9
 
 ## 联系我
 
-欢迎关注我的微博 [@孺子牛骑士](https://weibo.com/{{site.author.weibo}})，或发邮件到 [{{site.author.email}}](mailto:{{site.author.email}}) 与我联系。你也可以通过页面左下角的链接给我留言。
+请发邮件到 [{{site.author.email}}](mailto:{{site.author.email}}) 与我联系。你也可以通过页面左下角的链接给我留言。
 
 <div class="message">
 身份声明：<code>AEF8 AF62 E961 00B5 A9F3  0A07 5736 AE9A 8AB7 83F6</code> 为本人所持 GPG 公钥指纹。
