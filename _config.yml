@@ -16,10 +16,11 @@ description:      >
 
 
 # Google Analytics tracking ID
+# TODO: 如果使用本主题，请务必替换此处的 Google 统计代码，否则你的站点将无法获得统计数据
 analytics:        'UA-32028925-2'
 
 # Fallback image and color if not overwritten for tag or post
-image:            /public/images/hedin.jpg
+image:            /public/images/flower.jpg
 color:            '#dc322f'
 
 author:
