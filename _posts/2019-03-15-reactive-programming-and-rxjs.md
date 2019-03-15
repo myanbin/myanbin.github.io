@@ -45,6 +45,9 @@ RxJS 提供了一种对 Observable 类型的实现，以及一些工具函数，
 下面的代码，是对本文第一节中 Double clicks 事件的 RxJS 实现。
 
 ```ts
+import { fromEvent } from 'rxjs';
+import { buffer, map, filter, throttleTime } from 'rxjs/operators';
+
 const userBox = document.getElementsByClass('user-box');
  
 const doubleClicksStream = fromEvent(userBox, 'click').pipe(
@@ -58,4 +61,4 @@ doubleClicksStream.subscribe(data => {
 });
 ```
 
-如果你想更详细的了解 RxJS，可以查看[RxJS Guide](https://rxjs.dev/guide/overview)。
+如果你想更详细的学习 RxJS，可以查看官方的 [RxJS Guide](https://rxjs.dev/guide/overview)。
