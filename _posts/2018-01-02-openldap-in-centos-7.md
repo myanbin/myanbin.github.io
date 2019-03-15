@@ -22,11 +22,11 @@ LDAP 中的信息按照目录信息树结构组织，树中的一个节点称之
 
 一个条目的属性通过 LDAP 元数据模型（Scheme）中的对象类（objectClass）所定义，下面的表格列举了对象类 inetOrgPerson（Internet Organizational Person）中的一些必填属性和可选属性。
 
-| 属性名        | 是否必填 | 描述                                    |
+| 属性名        | 是否必填 | 描述                                     |
 | ------------- | :------: | --------------------------------------- |
-| `cn`          | 是       | 该条目被人所熟知的通用名（Common Name） |
+| `cn`          | 是       | 该条目被人所熟知的通用名（Common Name）  |
 | `sn`          | 是       | 该条目的姓氏                            |
-| `o`           | 否       | 该条目所属的组织名（Organization Name） |
+| `o`           | 否       | 该条目所属的组织名（Organization Name）  |
 | `mobile`      | 否       | 该条目的手机号码                        |
 | `description` | 否       | 该条目的描述信息                        |
 

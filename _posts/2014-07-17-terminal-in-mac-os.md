@@ -60,20 +60,20 @@ export LSCOLORS=exfxcxdxbxegedabagacad
 
 下面的表格是一些能够提高效率的 Shell 快捷键：
 
-| 快捷键                         | 描述说明                                       |
-| ------------------------------ | ---------------------------------------------- |
-| <kbd>Ctrl</kbd> + <kbd>A</kbd> | 将光标移至行首                                 |
-| <kbd>Ctrl</kbd> + <kbd>E</kbd> | 将光标移至行尾                                 |
-| <kbd>Ctrl</kbd> + <kbd>B</kbd> | 将光标向左移动一个字符                         |
-| <kbd>Ctrl</kbd> + <kbd>F</kbd> | 将光标向右移动一个字符                         |
-| <kbd>Ctrl</kbd> + <kbd>K</kbd> | 删除当前光标到行尾的字符                       |
-| <kbd>Ctrl</kbd> + <kbd>U</kbd> | 删除当前光标到行首的字符                       |
-| <kbd>Ctrl</kbd> + <kbd>W</kbd> | 向前删除一个单词                               |
-| <kbd>Ctrl</kbd> + <kbd>R</kbd> | 搜索历史命令列表                               |
-| <kbd>Ctrl</kbd> + <kbd>N</kbd> | 从历史命令列表中取下一条命令，相当于向下方向键 |
-| <kbd>Ctrl</kbd> + <kbd>P</kbd> | 从历史命令列表中取上一条命令，相当于向上方向键 |
-| <kbd>Ctrl</kbd> + <kbd>L</kbd> | 清屏                                           |
-| <kbd>Ctrl</kbd> + <kbd>D</kbd> | 关闭当前的终端会话                             |
+| 快捷键                          | 描述说明                                       |
+| ------------------------------  | --------------------------------------------- |
+| <kbd>Ctrl</kbd> + <kbd>A</kbd>  | 将光标移至行首                                 |
+| <kbd>Ctrl</kbd> + <kbd>E</kbd>  | 将光标移至行尾                                 |
+| <kbd>Ctrl</kbd> + <kbd>B</kbd>  | 将光标向左移动一个字符                          |
+| <kbd>Ctrl</kbd> + <kbd>F</kbd>  | 将光标向右移动一个字符                          |
+| <kbd>Ctrl</kbd> + <kbd>K</kbd>  | 删除当前光标到行尾的字符                        |
+| <kbd>Ctrl</kbd> + <kbd>U</kbd>  | 删除当前光标到行首的字符                        |
+| <kbd>Ctrl</kbd> + <kbd>W</kbd>  | 向前删除一个单词                               |
+| <kbd>Ctrl</kbd> + <kbd>R</kbd>  | 搜索历史命令列表                               |
+| <kbd>Ctrl</kbd> + <kbd>N</kbd>  | 从历史命令列表中取下一条命令，相当于向下方向键    |
+| <kbd>Ctrl</kbd> + <kbd>P</kbd>  | 从历史命令列表中取上一条命令，相当于向上方向键    |
+| <kbd>Ctrl</kbd> + <kbd>L</kbd>  | 清屏                                           |
+| <kbd>Ctrl</kbd> + <kbd>D</kbd>  | 关闭当前的终端会话                              |
 
 
 （本文写于杭州阿里实习期间）
