@@ -42,7 +42,7 @@
   width: 20rem;
   background-size: cover;
   background-position: center center;
-  box-shadow: 8px 0 20px 0px rgba(0,0,0,.2)
+  box-shadow: 0 .15rem 1.75rem 0 rgba(58,59,69,.15) !important;
 }
 /* make sidebar slightly darker to increase text readability (when using a background image) */
 .sidebar::before {

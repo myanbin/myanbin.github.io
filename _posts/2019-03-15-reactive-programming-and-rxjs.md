@@ -1,6 +1,6 @@
 ---
 layout: post
-title: '五分钟读懂响应式编程和 RxJS'
+title: '五分钟明白什么是响应式编程和 RxJS'
 tags: [code]
 ---
 
@@ -19,9 +19,9 @@ tags: [code]
 
 响应式编程提供了一系列的函数，如 `map`、`filter` 等，可以将一个 Stream 转化为一个新的 Stream。在我们这个例子中，我们使用了几个简单的函数，将一个普通的 Click 流转化成了 Double clicks 流。
 
-![从普通 Click 事件流到 Double clicks 事件流的处理过程]({{site.img_url}}/2019-rx-multiple-clicks-stream.png){:.center}
-
 灰色的方框是用来转换 Stream 的函数。首先，我们把连续 250 ms 内的 Click 都积累到一个列表中。结果是一个列表的 Stream ，然后我们使用 `map()` 把每个列表映射为一个整数，即它的长度。最终，我们使用 `filter(x >= 2)` 把整数 1 给过滤掉。就这样，经过这几个操作就生成了我们想要的 Stream。然后我们就可以订阅这个 Stream，并以我们所希望的方式作出反应。
+
+![从普通 Click 事件流到 Double clicks 事件流的处理过程]({{site.img_url}}/2019-rx-multiple-clicks-stream.png){:.center}
 
 最后我们再想想，如果用传统的方式，你会怎么实现上述功能。
 
@@ -42,7 +42,7 @@ RxJS 提供了一种对 Observable 类型的实现，以及一些工具函数，
 | 多播          | `share`, `publish` 等                                 |
 
 
-下面的代码，是对本文第一节中 Double clicks 事件的 RxJS 实现。
+下面的代码，是对本文第一节中所举示例的 RxJS 实现。
 
 ```ts
 import { fromEvent } from 'rxjs';
@@ -57,8 +57,8 @@ const doubleClicksStream = fromEvent(userBox, 'click').pipe(
 );
  
 doubleClicksStream.subscribe(data => {
- // Handle the double clicks
+  // Handle the double clicks event
 });
 ```
 
-如果你想更详细的学习 RxJS，可以查看官方的 [RxJS Guide](https://rxjs.dev/guide/overview)。
+如果你想更详细的了解 RxJS，可以查看官方的 [RxJS Guide](https://rxjs.dev/guide/overview) 进行学习。
