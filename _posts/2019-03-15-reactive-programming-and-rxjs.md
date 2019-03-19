@@ -5,7 +5,7 @@ tags: [code]
 ---
 
 
-在计算机领域，响应式编程（英文：Reactive Programming）是一种面向数据流和变更传播的异步编程范式。就像一个简单的 Click 事件，我们可以通过监听它来做出相应的行为，响应式编程将所有的变量、用户输入、异步接口请求等均看作是可观察的（Observable）数据流，并通过监听这个流来做出响应。
+在计算机领域，响应式编程（英文：Reactive Programming）是一种面向数据流和变更传播的异步编程范式[^1]。就像一个简单的 Click 事件，我们可以通过监听它来做出相应的行为，响应式编程将所有的变量、用户输入、异步接口请求等均看作是可观察的（Observable）数据流，并通过监听这个流来做出响应。
 
 ## 响应式编程
 
@@ -46,12 +46,12 @@ RxJS 提供了一种对 Observable 类型的实现，以及一些工具函数，
 
 ```ts
 import { fromEvent } from 'rxjs';
-import { buffer, map, filter, throttleTime } from 'rxjs/operators';
+import { bufferTime, map, filter } from 'rxjs/operators';
 
 const userBox = document.getElementsByClass('user-box');
  
 const doubleClicksStream = fromEvent(userBox, 'click').pipe(
-  buffer(throttleTime(2500)),
+  bufferTime(250),
   map(list => list.length),
   filter(x => x >= 2)
 );
@@ -62,3 +62,6 @@ doubleClicksStream.subscribe(data => {
 ```
 
 如果你想更详细的了解 RxJS，可以查看官方的 [RxJS Guide](https://rxjs.dev/guide/overview) 进行学习。
+
+
+[^1]: 一种编程的方法论，用来指导人们如何思考和解决问题，例如面向对象编程（OOP）或者函数式编程（FP）等。
