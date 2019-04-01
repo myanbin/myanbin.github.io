@@ -11,7 +11,6 @@ $(function() {
    * nice scroll
    */
   $("body").niceScroll();
-  $(".highlight").niceScroll();
 
   /**
    * dark mode
