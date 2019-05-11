@@ -1,6 +1,6 @@
 ---
 layout: post
-title: '五分钟明白什么是响应式编程和 RxJS'
+title: '什么是响应式编程和 RxJS'
 tags: [code]
 ---
 
@@ -62,6 +62,5 @@ doubleClicksStream.subscribe(data => {
 ```
 
 如果你想更详细的了解 RxJS，可以查看官方的 [RxJS Guide](https://rxjs.dev/guide/overview) 进行学习。
-
 
 [^1]: 一种编程的方法论，用来指导人们如何思考和解决问题，例如面向对象编程（OOP）或者函数式编程（FP）等。
