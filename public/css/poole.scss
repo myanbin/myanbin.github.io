@@ -37,7 +37,7 @@ body {
 }
 
 body {
-  font-family: "PingFang SC", "Helvetica Neue", Helvetica, "Hiragino Sans GB", "Nato Sans", "Open Sans", "Microsoft Yahei", sans-serif;
+  font-family: "Nato Sans", "Open Sans", "PingFang SC", "Helvetica Neue", "Hiragino Sans GB", "Microsoft Yahei", sans-serif;
   background-color: #ffffff;
   color: #1c2124;
   -webkit-text-size-adjust: 100%;
@@ -74,10 +74,14 @@ body.dark-mode .aside-title {
 body.dark-mode pre,
 body.dark-mode code {
   background-color: #0a121b;
-  color: #c1f1f0;
+  color: #d3d4d4;
 }
 body.dark-mode .highlight .nt {
   color: #e8a0e8
+}
+body.dark-mode .highlight .nx,
+body.dark-mode .highlight .na {
+  color: #d3d4d4;
 }
 body.dark-mode .highlight .k {
   color: #da5ada
@@ -205,8 +209,8 @@ code {
   /* Could be mistaken for a link if the user choses a similar link-color, so better no colored inline code. */
   border-radius: 0;
   font-size: 1rem;
-  background-color: #f4f4f4;
-  color: #000000;
+  background-color: #fdf6e3;
+  color: #35464b;
 }
 pre {
   display: block;
@@ -221,7 +225,6 @@ pre {
 pre code {
   padding: 0;
   background-color: transparent;
-  color: #c3c3c3;
   /* Fit 80 chars in the block without side-scroll for large screens */
   font-size: .9rem;
 }
