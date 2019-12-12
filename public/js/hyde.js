@@ -3,7 +3,7 @@
  * https://github.com/myanbin
  */
 
-console.log("This Jekyll theme's author is Ma Yanbin <myanbin@gmail.com>");
+console.log("%cThis Jekyll theme's author is Ma Yanbin <myanbin@gmail.com>", 'color: red; font-size: 4em;');
 
 $(function() {
 

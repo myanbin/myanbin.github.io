@@ -5,7 +5,7 @@ tags: [code]
 ---
 
 
-本文将主要介绍如何备份 OpenLDAP 的配置目录和数据目录，并将其恢复到另一个 OpenLDAP 服务中。如果你还不熟悉什么是 OpenLDAP，请查看[CentOS 7 环境下 OpenLDAP 的安装与配置]({{site.baseurl}}{% link _posts/2018-01-02-openldap-in-centos-7.md %})。
+本文将主要介绍如何备份 OpenLDAP 的配置目录和数据目录，并将其恢复到另一个 OpenLDAP 服务中。如果你还不熟悉什么是 OpenLDAP，请查看 [CentOS 7 环境下 OpenLDAP 的安装与配置]({{site.baseurl}}{% link _posts/2018-01-02-openldap-in-centos-7.md %})。
 
 ## 一、OpenLDAP 的备份
 
