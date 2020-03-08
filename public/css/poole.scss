@@ -37,7 +37,7 @@ body {
 }
 
 body {
-  font-family: "Nato Sans", "Open Sans", "PingFang SC", "Helvetica Neue", "Hiragino Sans GB", "Microsoft Yahei", sans-serif;
+  font-family: "PingFangTC-Light", "Open Sans", "PingFang SC", "Helvetica Neue", "Hiragino Sans GB", "Microsoft Yahei", sans-serif;
   background-color: #ffffff;
   color: #1c2124;
   -webkit-text-size-adjust: 100%;
@@ -108,7 +108,7 @@ a:focus {
 /* Headings */
 h1, h2, h3, h4, h5, h6 {
   margin-bottom: 1rem;
-  font-weight: bold;
+  font-weight: 600;
   line-height: 1.25;
   text-rendering: optimizeLegibility;
 }
@@ -438,12 +438,12 @@ a.footnote:hover {
   border-bottom: none;
 }
 a.footnote::before {
-  content: "注";
+  content: "[";
   padding: 0 2px;
 }
 a.footnote::after {
-  content: "";
-  padding-right: 2px;
+  content: "]";
+  padding: 0 2px;
 }
 div.footnotes > ol {
   padding-left: 1.5rem;
