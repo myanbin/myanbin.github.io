@@ -96,6 +96,19 @@ Login Succeeded
 
 ## 试一试 Harbor
 
+在 Harbor 中，镜像均以项目的形式组织。我们在页面上创建一个名为 foo 的测试项目，然后将从 Docker Hub 上拉取的 busybox 镜像推送到自己的仓库中：
+
+```sh
+$ docker pull busybox:1.31.1
+$ docker tag busybox:1.31.1 registry.admtest.xinhua.tech/foo/busybox:1.31.1
+$ docker push registry.admtest.xinhua.tech/foo/busybox:1.31.1
+```
+
+最后，可以在项目页面查看到刚刚上传的 busybox 镜像：
+
+![Harbor Web 页面]({{site.img_url}}/2020-harbor-web.png){:.center}
+
+## 其他
 
 如果需要重启 Harbor 服务，需要进入其安装目录，执行如下命令：
 
