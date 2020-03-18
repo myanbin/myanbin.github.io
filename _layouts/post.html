@@ -21,7 +21,6 @@ layout: default
     <span><span class="icon icon-calendar"></span> 发表于 <time datetime="{{page.date | date_to_xmlschema}}">{{page.date | date: '%Y年%m月%d日'}}</time> &middot;</span>
     {% if tags_content != '' %}归类于{{tags_content}} &middot;{% endif %}
     {{content | strip_html | strip_newlines | size | divided_by: 350 | round}} 分钟 &middot;
-    <span id="busuanzi_container_page_pv" style='display:none'>阅读量 <span id="busuanzi_value_page_pv"></span> &middot;</span>
     <span><a href="https://github.com/myanbin/myanbin.github.io/edit/master/{{page.path}}">报告错误</a></span>
   </div>
   <hr class="post-divide">

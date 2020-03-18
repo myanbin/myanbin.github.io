@@ -156,7 +156,7 @@ nginx['redirect_http_to_https'] = true
 ```terminal
 # mkdir -p /etc/gitlab/ssl
 # chmod 700 /etc/gitlab/ssl
-# cp gitlab.xinhua.io.key gitlab.xinhua.iocom.crt /etc/gitlab/ssl/
+# cp gitlab.xinhua.io.key gitlab.xinhua.io.crt /etc/gitlab/ssl/
 ```
 
 注意上面的证书必须以配置中的域名（如本文中的 `gitlab.xinhua.io`）为其文件名。

@@ -19,7 +19,7 @@ sequence: 9
 {% endif %}
 
 
-我是<u>饮冰先生</u>，毕业于北京邮电大学计算机专业，目前在中国北京居住和工作，从事 IT 行业。我喜爱阅读、电影、数码技术和一切美的事物，也喜欢哲学和历史。我是一个具有 [INFP](http://www.personalitypage.com/INFP.html) 性格的人。
+我是<u>饮冰先生</u>，毕业于北京邮电大学，获计算机技术硕士学位。我目前在中国北京居住和工作，从事 IT 行业。我喜爱阅读、电影、数码技术和一切美的事物，也喜欢哲学和历史。我是一个具有 [INFP](http://www.personalitypage.com/INFP.html) 性格的人。
 
 
 ## 更加了解我
@@ -37,14 +37,14 @@ sequence: 9
 
 ## 版权说明
 
-我坚信着开放、自由和乐于分享是推动计算机技术发展的动力之一。所以本站所有内容均采用[署名 4.0 国际（CC BY 4.0）](http://creativecommons.org/licenses/by/4.0/deed.zh)创作共享协议。通俗地讲，只要在使用时署名，那么使用者可以对本站所有内容进行转载、节选、二次创作，并且允许商业性使用。
+我坚信着开放、自由和乐于分享是推动计算机技术发展的动力之一。所以除非特别声明，本站所有内容均采用[署名-非商业使用 4.0 国际](https://creativecommons.org/licenses/by-nc/4.0/deed.zh)（CC BY-NC 4.0）创作共享协议。通俗地讲，只要在使用时进行署名（包括但不限于创作者的姓名或名称、作品链接等），那么使用者可以对本站所有内容进行转载、节选、二次创作，但不得将本作品用于商业目的。。
 
 ## 联系我
 
 请发邮件到 [{{site.author.email}}](mailto:{{site.author.email}}) 与我联系。你也可以通过页面左下角的链接给我留言。
 
 <div class="message">
-身份声明：<span style="font-weight: bold; font-family: 'Source Code Pro', 'Andale Mono', Consolas, monospace">AEF8 AF62 E961 00B5 A9F3  0A07 5736 AE9A 8AB7 83F6</span> 为本人所持有的 PGP 公钥指纹
+身份声明：<span style="font-weight: bold; font-family: 'Source Code Pro', 'Andale Mono', Menlo, Consolas, monospace">AEF8 AF62 E961 00B5 A9F3  0A07 5736 AE9A 8AB7 83F6</span> 为本人所持有的 PGP 公钥指纹
 </div>
 
 ## 请我喝一杯咖啡 {#buymeacoffee}

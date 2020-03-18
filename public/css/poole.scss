@@ -195,14 +195,14 @@ kbd {
   background-color: #f5f3f1;
   color: #222222;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
-  font-family: "Source Code Pro", "Andale Mono", Consolas, "Microsoft Yahei", monospace;
+  font-family: "Source Code Pro", "Andale Mono", Menlo, Consolas, "Microsoft Yahei", monospace;
   font-size: .8rem;
 }
 
 /* Code */
 code,
 pre {
-  font-family: "Source Code Pro", "Andale Mono", Consolas, "Microsoft Yahei", monospace;
+  font-family: "Source Code Pro", "Andale Mono", Menlo, Consolas, "Microsoft Yahei", monospace;
 }
 code {
   padding: .18em 0.28em;
