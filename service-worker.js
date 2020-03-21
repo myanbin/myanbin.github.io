@@ -1,6 +1,6 @@
 console.log('Hello from service-worker.js');
 
-importScripts('https://storage.googleapis.com/workbox-cdn/releases/5.0.0/workbox-sw.js');
+importScripts('/public/js/workbox-sw.js');
 
 workbox.routing.registerRoute(
   /\.html$/,
@@ -10,11 +10,18 @@ workbox.routing.registerRoute(
 );
 
 workbox.routing.registerRoute(
-  new RegExp('/public/'),
+  /\.(css|js)$/,
+  new workbox.strategies.StaleWhileRevalidate({
+    cacheName: 'asset-cache',
+  }),
+);
+
+workbox.routing.registerRoute(
+  /\.(jpg|jpeg|svg|png|gif|ttf|mp3)$/,
   // Use the cache if it's available.
   new workbox.strategies.CacheFirst({
     // Use a custom cache name.
-    cacheName: 'public-cache',
+    cacheName: 'static-cache',
     plugins: [
       new workbox.expiration.ExpirationPlugin({
         maxEntries: 100,
@@ -29,11 +36,10 @@ workbox.routing.registerRoute(
 );
 
 workbox.precaching.precacheAndRoute([
-  {url: '/', revision: '383676' },
-  {url: '/index.html', revision: '383676' },
-  {url: '/about.html', revision: '383676' },
+  { url: '/index.html', revision: '2003' },
+  { url: '/about.html', revision: '2003' },
+  { url: '/links.html', revision: '2003' },
+  { url: '/public/css/styles.css', revision: '2003' },
 ]);
 
-// Set a default network-first strategy to use when
-// there is no explicit matching route:
 workbox.routing.setDefaultHandler(new workbox.strategies.NetworkFirst());
