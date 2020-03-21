@@ -90,6 +90,7 @@ $ ./install.sh --with-clair
 $ docker login registry.k8sadm.xinhua.tech
 Username: admin
 Password: Passw0rd
+
 Login Succeeded
 ```
 至此，私有镜像仓库 Harbor 安装完毕。

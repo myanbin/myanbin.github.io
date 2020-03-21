@@ -169,14 +169,16 @@ abbr[title] {
 u {
   text-decoration: none;
   border-bottom: 1px solid;
+  margin: 0 1px;
 }
 ins {
   text-decoration: none;
   background-color: #d4fcbc;
 }
 del {
-  text-decoration: none;
-  background-color: #fbb6c2;
+  text-decoration: line-through;
+  color: #8c8c8c;
+  margin: 0 1px;
 }
 
 figure {
@@ -328,6 +330,9 @@ th {
   margin-right: -1rem;
 }
 
+.message p {
+  margin-bottom: 0;
+}
 
 /*
  * Container

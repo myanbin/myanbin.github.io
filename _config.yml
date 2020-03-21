@@ -2,17 +2,19 @@
 permalink:        /post/:title.html
 
 # Setup
-url:              https://myanbin.github.io
+url:              https://mayanbin.com
 img_url:          https://infp.github.io/images
 
 # Set to '' in case of hosting on `https://<your-github-name>.github.io`
 baseurl:          ''
 
-title:            '饮冰先生'
+title:            饮冰先生的博客
 
 # Markdown enabled, however don't use more than one paragraph (enforced by `>`)
 description:      >
   关于[代码](/code/)、[生活](/life/)、[宇宙](/read/)和[一切](/)。
+
+notification:     |
 
 
 # Google Analytics tracking ID
@@ -24,12 +26,12 @@ image:            /public/images/flower.jpg
 color:            '#dc322f'
 
 author:
-  name:           '饮冰先生'
+  name:           饮冰先生
   email:          yb.ma@outlook.com
+  photo:          /public/images/cat.jpg
   github:         myanbin
   linkedin:       myanbin
   facebook:       myanbin
-  photo:          /public/images/cat.jpg
 
 
   # Markdown enabled, can use multiple paragraphs (enabled by `|`)
