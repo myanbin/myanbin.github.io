@@ -194,6 +194,7 @@
 
 .sidebar-social {
   margin-bottom: 1.25rem;
+  user-select: none;
 }
 .sidebar-social > a,
 .sidebar-social > span {
@@ -317,7 +318,7 @@
 }
 
 .icon.icon-dark-mode::before {
-  content: "\e9d5";
+  content: "\e9d6";
 }
 .icon.icon-calendar::before {
   content: "\e953";
@@ -343,12 +344,15 @@
 .icon.icon-instagram::before {
   content: "\ea92";
 }
-.icon.icon-dribbble::before {
-  content: "\eaa7";
+.icon.icon-steam::before {
+  content: "\eaad";
+}
+.icon.icon-stackoverflow::before {
+  content: "\ead0";
 }
 
 .icon.icon-rss,
-.icon.icon-dark-mode,
+.icon.icon-steam,
 .icon.icon-facebook {
   font-size: 0.95em;
 }
@@ -375,7 +379,7 @@
     margin: 2cm;
     size: A4;
   }
-  html {
+  body {
     font-family: "PT Serif", Georgia, "STSongti", "STZhongsong", "SimSun", serif;
     font-size: 14pt;
   }
@@ -388,6 +392,7 @@
   }
   .content {
     padding: 0;
+    font-family: "PT Serif", Georgia, "STSongti", "STZhongsong", "SimSun", serif;
   }
   .content .message {
     border: 1px solid;
@@ -401,11 +406,10 @@
   }
   .content pre {
     white-space: pre-line;
-    border-top: 1px solid;
-    border-bottom: 1px solid;
+    border: 1px solid;
+    border-radius: 0;
   }
   .content p:not(.lead) {
-    text-indent: 2em;
     margin-bottom: 0.6em;
   }
   .content blockquote p {
@@ -414,5 +418,8 @@
   // To force this heading to always be the beginning of a page
   h1 {
     page-break-before: always;
+  }
+  .post-data .icon.icon-calendar {
+    display: none;
   }
 }
