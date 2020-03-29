@@ -25,5 +25,7 @@ code:
 read:
   name: 读书
   image: /public/images/napoleon.jpg
-  description: >
-    读万卷书，行万里路。
+
+photo:
+  name: 照片
+  image: /public/images/napoleon.jpg    

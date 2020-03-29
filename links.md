@@ -11,14 +11,14 @@ sequence: 5
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    grid-gap: 1.2rem;
+    grid-gap: 10px;
   }
   .most-valuable-link .mvl-link {
     display: flex;
     flex-direction: column;
     justify-content: center;
     position: relative;
-    padding-left: 90px;
+    padding-left: 85px;
     height: 80px;
     width: 100%;
     color: inherit;
@@ -49,7 +49,7 @@ sequence: 5
   }
 </style>
 
-此页用于保存所有朋友的友链，我会不定期进行访问，并按照相关规则，选出最有价值友链若干，并在此公示。
+此页用于保存所有朋友的友链，我会不定期进行访问，并按照相关规则，选出最有价值友链（Most Vualable Link，缩写 MVL）若干，并在此公示。
 
 ## 最有价值友链
 

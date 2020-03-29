@@ -33,7 +33,7 @@ sequence: 9
 
 花时间进行写作是一件很有意义也很值得去做的事。我希望能在这里来分享技术、记录生活，同时也希望能结交到更多朋友。
 
-本站使用 GitHub Page 和 Jekyll 等开源平台和工具进行搭建，如果你喜欢这个博客，可以下载我的[源代码](https://github.com/myanbin/myanbin.github.io)进行修改，但请注意修改配置文件中私有数据，如 Google Analytics 网站统计分析等。
+本站使用 GitHub Page 和 Jekyll 等开源平台和工具进行搭建，如果你喜欢这个博客，可以下载我的[源代码](https://github.com/myanbin/myanbin.github.io)进行修改，但请注意修改配置文件中私有数据。
 
 ## 版权说明
 
@@ -43,10 +43,10 @@ sequence: 9
 
 ## 联系我
 
-如果需要私下联系我，请发邮件到 [{{site.author.email}}](mailto:{{site.author.email}})，或通过 QQ 发送消息，我的号码是 237572656。你也可以通过页面左下角的链接给我留言。
+如果需要私下联系我，请发邮件到 [{{site.author.email}}](mailto:{{site.author.email}})，或通过 QQ 发送消息（号码：237572656）。你也可以通过页面左下角的链接给我留言。
 
 <div class="message">
-身份声明：<span style="font-weight: bold; font-family: 'Source Code Pro', 'Andale Mono', Menlo, Consolas, monospace">AEF8 AF62 E961 00B5 A9F3  0A07 5736 AE9A 8AB7 83F6</span> 为本人所持有的 PGP 公钥指纹
+身份声明：<span style="font-weight: bold; font-family: 'Source Code Pro', 'Andale Mono', Menlo, Consolas, monospace">AEF8 AF62 E961 00B5 A9F3  0A07 5736 AE9A 8AB7 83F6</span> 为本人所持 PGP 公钥指纹
 </div>
 
 ## 请我喝一杯咖啡 {#buymeacoffee}

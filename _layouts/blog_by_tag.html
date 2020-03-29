@@ -11,6 +11,8 @@ layout: default
   {% endcomment %}
   {% capture desc %}{{tag.description}}{:.message}{% endcapture %}
   {{desc | markdownify}}
+{% else %}
+  <p class="message">{{tag.name}}下的所有文章</p>
 {% endif %}
 
 {% if site.tags[page.tag] %}

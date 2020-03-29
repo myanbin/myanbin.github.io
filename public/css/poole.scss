@@ -280,8 +280,6 @@ sup, sub {
 img {
   display: block;
   max-width: 100%;
-  margin: 0 0 1rem;
-  border-radius: 2px;
 }
 
 /* Tables */
@@ -421,16 +419,19 @@ th {
   border: 0;
 }
 .post hr:not(.post-divide)::after {
-  content: "...";
+  content: ". . . . . .";
   display: block;
   text-align: center;
   font-size: 1.5rem;
-  letter-spacing: .6em;
-  color: #ddd;
+  letter-spacing: .3em;
 }
 
-.post img::after {
-  content: attr(alt);
+.post img {
+  border-radius: 2px;
+}
+
+.post img[alt]::after {
+  content: attr(alt) "";
   display: block;
   text-align: center;
   font-size: .9rem;
