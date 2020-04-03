@@ -61,11 +61,11 @@ Host ka05
 $ hostnamectl set-hostname k8sadm01
 ```
 
-在 5 台主机中，均配置 hosts 信息：
+并在每台主机中追加如下的 Host 配置信息：
 
-```yaml
-# /etc/hosts
-
+```sh
+$ vim /etc/hosts
+...
 192.168.220.31  k8sadm01
 192.168.220.32  k8sadm02
 192.168.220.33  k8sadm03
@@ -108,7 +108,7 @@ $ swapoff -a
 
 ```bash
 $ yum install -y ipvsadm ipset
-$ cat << "EOF" > /etc/sysconfig/modules/ipvs.modules
+$ cat << EOF > /etc/sysconfig/modules/ipvs.modules
 #!/bin/sh
 ipvs_modules="ip_vs ip_vs_lc ip_vs_wlc ip_vs_rr ip_vs_wrr ip_vs_lblc ip_vs_lblcr ip_vs_dh ip_vs_sh ip_vs_fo ip_vs_nq ip_vs_sed ip_vs_ftp ip_vs_ovf ip_vs_pe_sip nf_conntrack_ipv4"
 for kernel_module in ${ipvs_modules}; do
@@ -121,7 +121,7 @@ EOF
 $ chmod +x /etc/sysconfig/modules/ipvs.modules && sh /etc/sysconfig/modules/ipvs.modules
 ```
 
-升级主机内核为 4.4.178：4.4.1784.4.1784.4.1784.4.1784.4.178 4.4.1784.4.1784
+升级主机内核为 4.4.178：
 
 ```bash
 $ yum install -y ./kernel-lt-4.4.178-1.el7.elrepo.x86_64.rpm
@@ -157,7 +157,7 @@ listen k8sadm
 EOF
 ```
 
-根据 haproxy.cfg 中的日志配置项，同步修改系统日志 rsyslog.conf 配置：
+根据 haproxy.cfg 中的日志配置项，同时修改系统日志 `/etc/rsyslog.conf` 配置：
 
 ```bash
 $ sed -i 's/^#[$]ModLoad imudp$/$ModLoad imudp/' /etc/rsyslog.conf
@@ -178,7 +178,7 @@ $ yum install -y keepalived
 
 配置文件 `/etc/keepalived/keepalived.conf`，修改内容如下：
 
-```c
+```conf
 # /etc/keepalived/keepalived.conf
 
 global_defs {
@@ -302,7 +302,7 @@ $ journalctl -xefu kubelet
 $ kubeadm config print init-defaults > ./kubeadm.config.yaml
 ```
 
-下面是 kubeadm.config.yaml 配置的具体内容：
+下面是 `kubeadm.config.yaml` 配置的具体内容：
 
 ```yaml
 apiVersion: kubeadm.k8s.io/v1beta2
@@ -393,7 +393,7 @@ winkernel:
   sourceVip: ""
 ```
 
-接下来，我们使用 kubeadm 初始化第一个 master 节点。
+接下来，我们使用 kubeadm 初始化第一个 Master 节点。
 
 ```bash
 $ kubeadm init --config ./kubeadm.config.yaml --upload-certs
@@ -439,14 +439,14 @@ $ vim ./calico.yaml
 ...
 ```
 
-Calico 默认子网地址 192.168.0.0/16 与我们集群中 5 台主机 IP 地址范围有重合，所以需要自定义一个子网地址段（该地址段需要与 kubeadm 配置中的 podSubnet 相同）。
+Calico 默认子网地址 `192.168.0.0/16` 与我们集群中 5 台主机 IP 地址范围有重合，所以需要自定义一个子网地址段（该地址段需要与 kubeadm 配置中的 podSubnet 相同）。
 
 参考：[https://docs.projectcalico.org/getting-started/kubernetes/quickstart](https://docs.projectcalico.org/getting-started/kubernetes/quickstart)
 
 
 ## 安装 Worker 节点
 
-接下来我们先将 k8sadm04 主机配置为集群的一个 work 节点，通过下列命令来加入集群：
+接下来我们先将 k8sadm04 主机配置为集群的一个 Worker 节点，通过下列命令来加入集群：
 
 ```bash
 $ kubeadm join 192.168.220.31:6443 --token abcdef.0123456789abcdef \
@@ -698,7 +698,7 @@ $ curl -v -H 'Host: mypage.k8sadm.xinhua.tech' http://192.168.220.34/
 至此，k8s 集群即安装完毕。
 
 
-## 附：重置集群
+## 重置集群
 
 在 k8s 安装的过程中，可能出现或多或少的错误，需要删除集群环境，所以最后，我们用少量篇幅来介绍如何使用 kubeadm 来重置 k8s 集群。
 
@@ -714,5 +714,9 @@ $ kubeadm reset
 $ rm -rf /etc/cni/net.d
 $ ipvsadm --clear
 ```
+
+## 最后
+
+本文中用到的配置文件，可[点击这里](https://github.com/myanbin/k8s-scripts)查看。
 
 （完）
