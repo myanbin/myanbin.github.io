@@ -10,7 +10,7 @@ tags: [code]
 
 ## 安装 Docker 和 Docker Compose
 
-配置阿里的 yum 源，并安装 Docker CE 版本（注：当前最新版本为 19.03.6）：
+配置阿里的 yum 源，并安装 Docker CE 版本。注：当前最新版本为 19.03.6：
 
 ```sh
 $ yum install -y yum-utils device-mapper-persistent-data lvm2
