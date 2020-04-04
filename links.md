@@ -74,3 +74,4 @@ sequence: 5
 ## 其他友链
 
 * [嗨森の猫窝](https://hexenq.com/)
+* [晚晴幽草轩](https://www.jeffjade.com/)

@@ -6,7 +6,7 @@ tags: [code]
 
 Kubernetes，简称 k8s，是 Google 开源的一个容器编排引擎，其的目标是让部署容器化的应用简单并且高效，它支持自动化部署、大规模可伸缩、应用容器化管理。随着云原生技术的发展，Kubernetes 受到越来越多的关注。
 
-本文将主要介绍如何使用 kubeadm 安装部署 Kubernetes 集群。通过学习，你将学会如何从零开始搭建一个 Kubernetes 集群。
+本文将主要介绍如何使用 kubeadm 安装部署 Kubernetes 集群（注：安装版本为 1.17.3）。通过学习，你将学会如何从零开始搭建一个 Kubernetes 集群。
 
 ## 准备虚拟机环境
 
@@ -231,7 +231,7 @@ $ systemctl enable keepalived
 
 ## 安装 Docker
 
-配置阿里的 yum 源，并安装：
+配置阿里的 yum 源，并安装 Docker（注：当前最新版本为 19.03.6）：
 
 ```bash
 $ yum install -y yum-utils device-mapper-persistent-data lvm2
@@ -239,7 +239,6 @@ $ yum-config-manager --add-repo http://mirrors.aliyun.com/docker-ce/linux/centos
 $ yum install -y docker-ce docker-ce-cli
 ```
 
-注：当前最新版本为 19.03.6
 创建 Docker 守护进程的配置文件，包括阿里镜像仓库，并重启 Docker：
 
 ```bash
@@ -285,6 +284,7 @@ $ systemctl start kubelet
 ```
 
 注：当前最新版本为 1.17.3-0
+
 注：可使用下面命令查看 kubelet 服务的日志：
 
 ```bash
@@ -302,7 +302,7 @@ $ journalctl -xefu kubelet
 $ kubeadm config print init-defaults > ./kubeadm.config.yaml
 ```
 
-下面是 `kubeadm.config.yaml` 配置的具体内容：
+下面是 `kubeadm.config.yaml` 配置的具体内容，需要修改的地方已在配置中进行注释说明：
 
 ```yaml
 apiVersion: kubeadm.k8s.io/v1beta2
@@ -471,7 +471,7 @@ k8sadm04   Ready      <none>   6m13s   v1.17.3
 
 ## 安装其他 Master 节点
 
-下面我们来安装另外两个 Master 节点。
+下面我们来安装另外两个 Master 节点。在 k8sadm02 和 k8sadm03 上分别执行下面命令即可：
 
 ```bash
 $ kubeadm join 192.168.220.31:6443 --token r4t3l3.14mmuivm7xbtaeoj \
@@ -479,6 +479,17 @@ $ kubeadm join 192.168.220.31:6443 --token r4t3l3.14mmuivm7xbtaeoj \
     --control-plane --certificate-key 7373f829c733b46fb78f0069f90185e0f00254381641d8d5a7c5984b2cf17cd3
 ```
 
+等所有的 Master 和 Worker 节点安装完成后，可以在任意节点上执行 `kubectl get nodes -o wide` 查看集群内各节点状态：
+
+```bash
+$ kubectl get nodes
+NAME       STATUS     ROLES    AGE     VERSION
+k8sadm01   Ready      master   9m38s   v1.17.3
+k8sadm02   Ready      master   4m38s   v1.17.3
+k8sadm03   Ready      master   1m38s   v1.17.3
+k8sadm04   Ready      <none>   6m13s   v1.17.3
+k8sadm05   Ready      <none>   1m13s   v1.17.3
+```
 
 ## 安装 Kubernetes Dashboard
 

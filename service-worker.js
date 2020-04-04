@@ -38,7 +38,7 @@ workbox.routing.registerRoute(
 workbox.precaching.precacheAndRoute([
   { url: '/index.html', revision: '2003' },
   { url: '/about.html', revision: '2003' },
-  { url: '/links.html', revision: '2003' },
+  { url: '/links.html', revision: '2004' },
   { url: '/public/css/styles.css', revision: '2003' },
 ]);
 
