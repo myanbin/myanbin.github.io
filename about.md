@@ -43,7 +43,7 @@ sequence: 9
 
 ## 联系我
 
-如果需要私下联系我，请发邮件到 [{{site.author.email}}](mailto:{{site.author.email}})，或通过 QQ 发送消息（号码：237572656）。你也可以通过页面左下角的链接给我留言。
+如果需要私下联系我，请发邮件到 [{{site.author.email}}](mailto:{{site.author.email}})，或通过 QQ 发送消息。你也可以通过页面左下角的链接给我留言。
 
 <div class="message">
 身份声明：<span style="font-weight: bold; font-family: 'Source Code Pro', 'Andale Mono', Menlo, Consolas, monospace">AEF8 AF62 E961 00B5 A9F3  0A07 5736 AE9A 8AB7 83F6</span> 为本人所持 PGP 公钥指纹

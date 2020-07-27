@@ -3,7 +3,7 @@ permalink:        /post/:title.html
 
 # Setup
 url:              https://mayanbin.com
-img_url:          https://infp.github.io/images
+img_url:          https://cdn.jsdelivr.net/gh/infp/infp.github.io/images
 
 # Set to '' in case of hosting on `https://<your-github-name>.github.io`
 baseurl:          ''
@@ -27,11 +27,12 @@ color:            '#dc322f'
 
 author:
   name:           饮冰先生
-  email:          yb.ma@outlook.com
+  email:          237572656@qq.com
   photo:          /public/images/cat.jpg
   github:         myanbin
   linkedin:       myanbin
   facebook:       myanbin
+  steam:          myanbin
 
 
   # Markdown enabled, can use multiple paragraphs (enabled by `|`)
