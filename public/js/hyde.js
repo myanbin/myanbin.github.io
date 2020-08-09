@@ -3,7 +3,7 @@
  * https://github.com/myanbin
  */
 
-console.log("%cThis Jekyll theme's author is Ma Yanbin <myanbin@gmail.com>", 'color: red; font-size: 4em;');
+console.log("%c  ", "background-image: url('//public/images/source-code.png'); background-repeat: no-repeat; background-size: 88px 128px; font-size: 128px")
 
 $(function() {
 
