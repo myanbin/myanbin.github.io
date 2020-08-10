@@ -3,7 +3,7 @@
  * https://github.com/myanbin
  */
 
-console.log("%c  ", "background-image: url('//public/images/source-code.png'); background-repeat: no-repeat; background-size: 88px 128px; font-size: 128px")
+console.log("%c  ", "background-image: url('https://mayanbin.com/public/images/source-code.png'); background-repeat: no-repeat; background-size: 300px 300px; font-size: 300px");
 
 $(function() {
 
