@@ -49,7 +49,7 @@ sequence: 5
   }
 </style>
 
-此页用于保存所有朋友的友链，我会不定期进行访问，并按照相关规则，选出最有价值友链（Most Vualable Link，缩写 MVL）若干，并在此公示。
+此页用于保存所有朋友的友链，我会不定期进行访问，并按照相关规则，选出最有价值友链（Most Vualable Link）若干，并在此公示。
 
 ## 最有价值友链
 
@@ -75,3 +75,4 @@ sequence: 5
 
 * [嗨森の猫窝](https://hexenq.com/)
 * [晚晴幽草轩](https://www.jeffjade.com/)
+* [WardChan 的小站](https://blog.wardchan.com/)
