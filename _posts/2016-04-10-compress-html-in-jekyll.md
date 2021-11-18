@@ -1,7 +1,7 @@
 ---
 layout: post
 title: '压缩 Jekyll 中的 HTML 和 CSS 代码'
-tags: [code]
+tags: coding
 ---
 
 几年前，[@mdo](http://markdotto.com/) 开发了 Jekyll，如今已经成为最流行的静态博客网站生成器。我从 2012 年开始使用 GitHub Pages 和 Jekyll 搭建博客，最近在修改主题的时候，计划对网页代码进行优化。所以有了此文记录。

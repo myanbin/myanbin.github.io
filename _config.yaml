@@ -12,7 +12,7 @@ title:            饮冰先生的博客
 
 # Markdown enabled, however don't use more than one paragraph (enforced by `>`)
 description:      >
-  关于[代码](/code/)、[生活](/life/)、[宇宙](/)和[一切](/)。
+  关于[代码](/coding)、[生活](/life/)、[宇宙](/)和[一切](/)。
 
 notification:     |
 
@@ -28,7 +28,7 @@ color:            '#dc322f'
 author:
   name:           饮冰先生
   email:          237572656@qq.com
-  photo:          /public/images/cat.jpg
+  avatar:         /public/images/cat.jpg
   github:         myanbin
   linkedin:       myanbin
   facebook:       myanbin

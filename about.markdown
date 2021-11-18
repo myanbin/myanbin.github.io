@@ -4,7 +4,7 @@ title: "关于"
 permalink: about.html
 image: /public/images/redflag.jpg
 color: '#f44336'
-sequence: 9
+index: 5
 ---
 
 
@@ -14,8 +14,8 @@ sequence: 9
   Don't forget to add the `me` class to the photo, like this: `![alt](src){:.me}`.
 {% endcomment %}
 
-{% if site.author.photo %}
-  ![{{site.author.name}}]({{site.author.photo}}){:.me}
+{% if site.author.avatar %}
+  ![{{site.author.name}}]({{site.author.avatar}}){:.me}
 {% endif %}
 
 

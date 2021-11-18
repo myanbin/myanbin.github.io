@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "高效使用 Vim 编辑器"
-tags: [code]
+tags: coding
 ---
 
 

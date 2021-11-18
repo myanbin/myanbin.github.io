@@ -1,7 +1,7 @@
 ---
 layout: post
 title: '什么是响应式编程和 RxJS'
-tags: [code]
+tags: coding
 ---
 
 
@@ -49,13 +49,13 @@ import { fromEvent } from 'rxjs';
 import { bufferTime, map, filter } from 'rxjs/operators';
 
 const userBox = document.getElementsByClass('user-box');
- 
+
 const doubleClicksStream = fromEvent(userBox, 'click').pipe(
   bufferTime(250),
   map(list => list.length),
   filter(x => x >= 2)
 );
- 
+
 doubleClicksStream.subscribe(data => {
   // Handle the double clicks event
 });

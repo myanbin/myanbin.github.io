@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'Mac OS X 下终端的配置'
-tags: [code]
+tags: coding
 ---
 
 工欲善其事，必先利其器，今天要讲的是日常开发中最常用到的终端的配置。以下教程会用到：

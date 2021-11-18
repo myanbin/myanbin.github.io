@@ -1,7 +1,7 @@
 ---
 layout: post
 title: '如何给 Kindle 电子书设置封面'
-tags: [read]
+tags: reading
 ---
 
 对于一个完美主义者（或者可以说是强迫症患者）来说，Kindle 上缺少了封面的电子书是无法忍受的。不幸的是，我就属于这一类人。

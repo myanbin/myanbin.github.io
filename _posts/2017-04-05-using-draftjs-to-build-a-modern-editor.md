@@ -1,7 +1,7 @@
 ---
 layout: post
 title: '使用 Draft.js 来构建一个现代化的编辑器'
-tags: [code]
+tags: coding
 ---
 
 在前端，编辑器是一个非常重要的 Web 组件，任何需要编辑的地方都需要纯文本或富文本的编辑器。目前，纯文本编辑器主要依靠 HTML 的 `textarea` 标签来实现，而所见即所得的富文本编辑器由于增加了粗体、斜体等样式以及标题级别、图片视频等多媒体功能，一般通过设置 HTML 元素的 `contentEditable` 属性来实现。

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: '私有镜像仓库 Harbor 的安装与配置'
-tags: [code]
+tags: coding
 ---
 
 在云原生时代，各种系统服务都以 Docker 容器的方式运行着。镜像仓库，顾名思义就是用来存放 Docker 镜像的地方，它是云原生架构的核心之一。目前，最为流行的私有镜像仓库便是 CNCF 的毕业生之一的 Harbor（中文含义：港口）。

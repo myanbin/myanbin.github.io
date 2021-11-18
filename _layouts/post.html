@@ -35,9 +35,9 @@ layout: default
 <aside class="author">
   <h2 class="aside-title">关于作者</h2>
 
-  {% if site.author.photo %}
+  {% if site.author.avatar %}
   <audio src="{{site.baseurl}}/public/audio/cat.mp3" id="cat"></audio>
-  <img class="me" src="{{site.author.photo}}" alt="{{site.author.name}}" onclick="document.getElementById('cat').play()"/>
+  <img class="me" src="{{site.author.avatar}}" alt="{{site.author.name}}" onclick="document.getElementById('cat').play()"/>
   {% endif %}
 
   {{site.author.about | markdownify}}

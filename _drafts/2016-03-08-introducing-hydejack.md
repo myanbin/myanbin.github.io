@@ -87,7 +87,7 @@ Tags are not meant to be used #instagram #style: #food #goodfood #happy #happyli
 
     ~~~yml
     ---
-    layout: blog_by_tag
+    layout: post_by_tag
     tag: mytag
     permalink: /tag/mytag/
     ---

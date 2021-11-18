@@ -1,7 +1,7 @@
 ---
 layout: post
 title: '苦干三年，超越梦想'
-tags: [life]
+tags: life
 ---
 
 

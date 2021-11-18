@@ -15,17 +15,17 @@ life:
   name: 生活
   color: '#f44336'
   description: |
-    简单生活，高贵思考（Simple living, noble thinking）——这是上学时我从西方哲学家斯宾诺莎那里得到的名言，并成了我追求简朴而具有理性思想的生活方式的座右铭。
+    简单生活，高贵思考。这是上学时我从西方哲学家斯宾诺莎那里得到的名言，并成了我追求简朴而具有理性思想的生活方式的座右铭。
 
-code:
+coding:
   name: 代码
   description: >
     像建筑师、作曲家和画家一样，黑客们也在进行着富有创造性和挑战性的工作：他们将代码构筑成如今的互联网和计算机的世界。
 
-read:
+reading:
   name: 读书
   image: /public/images/napoleon.jpg
 
-photo:
-  name: 照片
-  image: /public/images/napoleon.jpg    
+photography:
+  name: 摄影
+  image: /public/images/napoleon.jpg

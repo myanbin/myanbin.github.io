@@ -1,7 +1,7 @@
 ---
 layout: post
 title: '使用 CNPM 搭建私有 npm 仓库'
-tags: [code]
+tags: coding
 ---
 
 CNPM 是一个可以提供 npm 私有化部署的开源方案。它提供了 JavaScript 模块的存储、发布和下载，以及一个用于在线浏览的 Web 界面。

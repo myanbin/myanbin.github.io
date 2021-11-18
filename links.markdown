@@ -2,7 +2,7 @@
 layout: page
 title: "友链"
 permalink: links.html
-sequence: 5
+index: 3
 ---
 
 <style>

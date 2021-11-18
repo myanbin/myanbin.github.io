@@ -5,7 +5,77 @@ layout: compress
 <!DOCTYPE html>
 <html lang="zh-hans">
 
-  {% include head.html %}
+  <head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+    <title>
+      {% if page.title == "Home" %}
+        {{site.title}} - {{site.tagline}}
+      {% else %}
+        {% if page.tag %} {{site.data.tags[page.tag].name}} {% else %} {{page.title}} {% endif %} - {{site.title}}
+      {% endif %}
+    </title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans|Source+Code+Pro">
+    <link rel="stylesheet" href="{{site.baseurl}}/public/css/styles.css">
+
+    {% assign color = page.color %}
+
+    {% unless color %}
+      {% if page.tag %}
+        {% assign tag = site.data.tags[page.tag] %}
+        {% assign color = tag.color %}
+      {% else %}
+        {% if page.tags.size > 0 %}
+          {% assign tag_name = page.tags[0] %}
+          {% assign tag = site.data.tags[tag_name] %}
+          {% assign color = tag.color %}
+        {% endif %}
+      {% endif %}
+    {% endunless %}
+
+    {% unless color %}
+      {% assign color = site.color %}
+    {% endunless %}
+
+    <style>
+      .content a,
+      .related-posts li a:hover {
+        color: {{color}};
+      }
+      ::selection {
+        color: #fff;
+        background: {{color}};
+      }
+      ::-moz-selection {
+        color: #fff;
+        background: {{color}};
+      }
+    </style>
+
+    <!-- Icons -->
+    <link rel="icon" type="image/png" href="{{site.baseurl}}/public/images/icons/launcher-icon-128x128.png">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{site.baseurl}}/public/images/icons/launcher-icon-152x152.png">
+    <!-- RSS -->
+    <link rel="alternate" type="application/atom+xml" title="{{site.title}}" href="{{site.baseurl}}/atom.xml">
+
+    <link rel="manifest" href="/manifest.json">
+
+    <script async data-no-instant>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', '{{site.analytics}}', 'auto');
+      ga('send', 'pageview');
+    </script>
+    <script src="{{site.baseurl}}/public/js/jquery.min.js"></script>
+
+  </head>
 
   <body>
 
@@ -13,10 +83,81 @@ layout: compress
       {{content}}
     </main>
 
-    {% include sidebar.html %}
+    <!-- sidebar -->
+    {% assign image = page.image %}
+
+    {% unless image %}
+      {% if page.tag %}
+        {% assign tag = site.data.tags[page.tag] %}
+        {% assign image = tag.image %}
+      {% else %}
+        {% if page.tags.size > 0 %}
+          {% assign tag_name = page.tags[0] %}
+          {% assign tag = site.data.tags[tag_name] %}
+          {% assign image = tag.image %}
+        {% endif %}
+      {% endif %}
+    {% endunless %}
+
+    {% unless image %}
+      {% assign image = site.image %}
+    {% endunless %}
+
+    <div id="_backdrop"></div>
+    <a   id="_menu" href="#_sidebar">☰</a>
+
+    <aside id="_sidebar" class="sidebar" {% if image %}style="background-image:url('{{image}}')"{% endif %}>
+      <div class="container sidebar-sticky">
+        <div class="sidebar-about">
+          <h1><img src="{{site.baseurl}}/public/images/logo-white.png" alt="{{site.title}}"></h1>
+          {{site.description | markdownify}}
+        </div>
+
+        <nav class="sidebar-nav">
+          <a class="sidebar-nav-item {% if page.url == '/' %}active{% endif %}" href="{{site.baseurl}}/">主页</a>
+          {% comment %}
+            The code below dynamically generates a sidebar nav of pages with
+            `layout: page` in the front-matter. See readme for usage.
+          {% endcomment %}
+
+          {% assign pages_list = site.pages | where_exp: "page", "page.index > 0" | sort: "index" %}
+          {% for node in pages_list %}
+            {% if node.title != null %}
+              {% if node.layout == "page" %}
+              <a class="sidebar-nav-item {% if page.url == node.url %}active{% endif %}" href="{{node.url | prepend:site.baseurl}}">{{node.title}}</a>
+              {% endif %}
+            {% endif %}
+          {% endfor %}
+
+          <a class="sidebar-nav-item" href="https://github.com/{{site.author.github}}/talk/issues/new">留言</a>
+        </nav>
+
+        <div class="sidebar-social">
+          {% if site.author.github %}
+            <a href="https://github.com/{{site.author.github}}"><span class="icon icon-github"></span></a>
+          {% endif %}
+
+          {% if site.author.linkedin %}
+            <a href="https://cn.linkedin.com/in/{{site.author.linkedin}}"><span class="icon icon-linkedin"></span></a>
+          {% endif %}
+
+          {% if site.author.facebook %}
+            <a href="https://www.facebook.com/{{site.author.facebook}}"><span class="icon icon-facebook"></span></a>
+          {% endif %}
+
+          {% if site.author.steam %}
+            <a href="/"><span class="icon icon-steam"></span></a>
+          {% endif %}
+
+          <a href="{{site.baseurl}}/atom.xml"><span class="icon icon-rss"></span></a>
+
+          <span id="_dark-mode"><span class="icon icon-dark-mode"></span></span>
+
+        </div>
+      </div>
+    </aside>
+
     <script src="{{site.baseurl}}/public/js/drawer.min.js"></script>
-    <!-- <script src="{{site.baseurl}}/public/js/instantclick.min.js" data-no-instant></script> -->
-    <!-- <script data-no-instant>InstantClick.init();</script> -->
     <script src="{{site.baseurl}}/public/js/hyde.js"></script>
 
   </body>

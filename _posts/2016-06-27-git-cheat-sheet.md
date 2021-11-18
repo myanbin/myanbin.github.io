@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'Git 命令清单'
-tags: [code]
+tags: coding
 ---
 
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: '编程十年：我的程序员成长之路'
-tags: [life]
+tags: life
 ---
 
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'OpenLDAP 的备份与恢复'
-tags: [code]
+tags: coding
 ---
 
 
