@@ -1,7 +1,7 @@
 ---
 layout: page
 title: 影集
-permalink: photo.html
+permalink: photos.html
 index: 7
 ---
 

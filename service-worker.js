@@ -1,4 +1,4 @@
-console.log('Hello from service-worker.js');
+console.log('hello from service-worker.js');
 
 importScripts('/public/js/workbox-sw.js');
 
@@ -36,10 +36,10 @@ workbox.routing.registerRoute(
 );
 
 workbox.precaching.precacheAndRoute([
-  { url: '/index.html', revision: '2003' },
-  { url: '/about.html', revision: '2003' },
-  { url: '/links.html', revision: '2004' },
-  { url: '/public/css/styles.css', revision: '2003' },
+  { url: '/index.html', revision: '2111' },
+  { url: '/about.html', revision: '2111' },
+  { url: '/links.html', revision: '2111' },
+  { url: '/public/css/styles.css', revision: '2111' },
 ]);
 
 workbox.routing.setDefaultHandler(new workbox.strategies.NetworkFirst());
