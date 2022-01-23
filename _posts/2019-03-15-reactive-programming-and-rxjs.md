@@ -1,7 +1,7 @@
 ---
 layout: post
 title: '什么是响应式编程和 RxJS'
-tags: coding
+tags: code
 ---
 
 

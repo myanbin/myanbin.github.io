@@ -1,7 +1,7 @@
 ---
 layout: post
 title: '爬虫框架 Scrapy 入门教程'
-tags: coding
+tags: code
 ---
 
 Scrapy 是一个用 Python 开发的爬虫框架，用于抓取 Web 页面并提取其中的结构化数据。

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'CentOS 7 环境下 OpenLDAP 的安装与配置'
-tags: coding
+tags: code
 ---
 
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: '关于正则表达式'
-tags: coding
+tags: code
 ---
 
 所谓正则表达式，就是一种描述字符串结构模式的形式化表达方法。在许多工具（如文本编辑器）及编程语言（如 Perl、JavaScript、awk）中，正则表达式都扮演了极其重要的角色。

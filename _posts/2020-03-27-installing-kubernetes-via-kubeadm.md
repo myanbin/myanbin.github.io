@@ -1,7 +1,7 @@
 ---
 layout: post
 title: '使用 kubeadm 安装 Kubernetes 集群'
-tags: coding
+tags: code
 ---
 
 Kubernetes，简称 k8s，是 Google 开源的一个容器编排引擎，其的目标是让部署容器化的应用简单并且高效，它支持自动化部署、大规模可伸缩、应用容器化管理。随着云原生技术的发展，Kubernetes 受到越来越多的关注。

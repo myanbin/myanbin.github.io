@@ -1,7 +1,7 @@
 ---
 layout: post
 title: '如何启用 OpenLDAP 的 memberOf 特性'
-tags: coding
+tags: code
 ---
 
 之前的文章中，我们已经安装部署了 [OpenLDAP 服务]({{site.baseurl}}{% link _posts/2018-01-02-openldap-in-centos-7.md %})。所以本文将主要介绍如何启用 OpenLDAP 中非常有用的 memberOf 特性。

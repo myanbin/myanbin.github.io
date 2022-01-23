@@ -1,7 +1,7 @@
 ---
 layout: post
 title: '2018 年我读了哪些书'
-tags: reading
+tags: read
 ---
 
 年末又至。按照惯例，我将继续盘点一下 2018 年里，我读过的那些书。

@@ -1,5 +1,5 @@
 # Permalinks
-permalink:        /post/:title.html
+permalink:        /posts/:title.html
 
 # Setup
 url:              https://mayanbin.com
@@ -8,11 +8,12 @@ img_url:          https://cdn.jsdelivr.net/gh/infp/infp.github.io/images
 # Set to '' in case of hosting on `https://<your-github-name>.github.io`
 baseurl:          ''
 
-title:            饮冰先生的博客
+title:            孺子牛
+tagline:          俯首甘为
 
 # Markdown enabled, however don't use more than one paragraph (enforced by `>`)
 description:      >
-  关于[代码](/coding)、[生活](/life)、[宇宙](/reading)和[一切](/)。
+  关于[代码](/)、[生活](/)、[宇宙](/)和[一切](/)。
 
 notification:     |
 

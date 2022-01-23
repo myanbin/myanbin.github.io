@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Perl 编程技巧"
-tags: coding
+tags: code
 ---
 
 

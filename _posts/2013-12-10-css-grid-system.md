@@ -1,7 +1,7 @@
 ---
 layout: post
 title: '如何设计一个简单的 CSS 栅格系统'
-tags: coding
+tags: code
 ---
 
 

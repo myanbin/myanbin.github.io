@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 读「人月神话」
-tags: reading
+tags: read
 ---
 
 

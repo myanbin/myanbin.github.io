@@ -1,7 +1,7 @@
 ---
 layout: post
 title: '2017 年我读了哪些书'
-tags: reading
+tags: read
 ---
 
 一直打算入手一个 Kindle 的，没想到三月份的时候，竟意外获奖，而奖品刚好是 Kindle Paperwhite，正遂我愿。我的读书生涯也进入了电纸书的时代。

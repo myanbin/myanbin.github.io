@@ -1,7 +1,7 @@
 ---
 layout: post
 title: '毕业两年记'
-tags: life photography
+tags: daily photo
 ---
 
 北邮的硕士研究生学制是两年半，所以在 2015 年春节前后，找工作的事情尘埃落定之后，也就意味着即将毕业离校了。

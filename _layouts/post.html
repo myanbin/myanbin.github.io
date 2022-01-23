@@ -9,7 +9,7 @@ layout: default
     {% assign tag = site.data.tags[post_tag] %}
     {% if tag %}
       {% capture tags_content_temp %}
-        {{tags_content}}<a href="{{site.baseurl}}/{{post_tag}}/">{{tag.name}}</a>
+        {{tags_content}}<a href="{{site.baseurl}}/tags/{{post_tag}}/">{{tag.name}}</a>
         {% if forloop.last == false %}<span>和</span>{% endif %}
       {% endcapture %}
       {% assign tags_content = tags_content_temp %}

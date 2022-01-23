@@ -1,7 +1,7 @@
 ---
 layout: post
 title: '介绍我的 dotfiles'
-tags: coding
+tags: code
 ---
 
 

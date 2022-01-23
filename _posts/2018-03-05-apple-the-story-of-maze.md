@@ -1,7 +1,7 @@
 ---
 layout: post
 title: '苹果：迷宫的故事'
-tags: reading
+tags: read
 ---
 
 <div class="message">

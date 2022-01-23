@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "像黑客一样写博客"
-tags: coding
+tags: code
 ---
 
 

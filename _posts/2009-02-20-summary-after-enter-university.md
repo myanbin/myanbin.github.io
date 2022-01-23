@@ -1,7 +1,7 @@
 ---
 layout: post
 title: '大学一年半以来的总结和以后的计划'
-tags: life
+tags: daily
 ---
 
 

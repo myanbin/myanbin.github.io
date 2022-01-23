@@ -1,7 +1,7 @@
 ---
 layout: post
 title: '数据结构中的栈和队列'
-tags: coding
+tags: code
 ---
 
 

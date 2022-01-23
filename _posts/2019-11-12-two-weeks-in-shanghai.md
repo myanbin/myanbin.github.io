@@ -1,7 +1,7 @@
 ---
 layout: post
 title: '出差上海两周记'
-tags: life photography
+tags: daily photo
 ---
 
 2019 年 10 月 28 日到 11 月 12 日的这两周时间里，因为参与“第二届进口博览会”移动报道的缘故，我再次来到上海。这也是我工作以来第一次公干外出。

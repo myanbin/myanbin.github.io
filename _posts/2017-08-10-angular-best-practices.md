@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'Angular 最佳实践'
-tags: coding
+tags: code
 ---
 
 

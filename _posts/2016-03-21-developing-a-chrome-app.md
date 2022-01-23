@@ -1,7 +1,7 @@
 ---
 layout: post
 title: '如何开发一个 Chrome App'
-tags: coding
+tags: code
 ---
 
 2008 年，Google 开发一款全新的基于 WebKit 内核的网络浏览器 Chrome，如今已经占有全球 58% 的市场份额。而运行于 Chrome 浏览器之上的 [Chrome App](https://developer.chrome.com/apps/about_apps)，是一个由 HTML、CSS 和 JavaScript 构成的应用程序，使用起来与操作系统的本地应用程序并无二致。本文通过编写一个简单的时钟应用，来讲解如何开发一个 Chrome App。

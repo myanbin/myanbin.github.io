@@ -1,7 +1,7 @@
 ---
 layout: post
 title: '使用 husky 和 lint-staged 检查 Node.js 的代码一致性'
-tags: coding
+tags: code
 ---
 
 在软件开发过程中，代码风格检查（Code Linting）是保障代码规范和一致性的有效手段。过去，Lint 的工作一般在 Code Review 或者 CI 的时候进行，但这样会导致问题的反馈链，浪费不必要的时间。因此，我们需要利用 Git 的 Pre Commit 钩子，将 Lint 过程放到开发者提交代码之前。

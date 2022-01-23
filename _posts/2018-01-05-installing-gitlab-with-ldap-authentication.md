@@ -1,7 +1,7 @@
 ---
 layout: post
 title: '如何搭建一个基于 LDAP 认证的 GitLab 服务'
-tags: coding
+tags: code
 ---
 
 本文主要介绍了如何在 CentOS 7 环境下安装 GitLab EE 服务，以及集成 LDAP 统一认证、开启 HTTPS 等一系列配置。关于前期工作 LDAP 服务的安装和配置，请阅读上一篇文章：
