@@ -1,6 +1,6 @@
 ---
 layout: post
-title: '出差上海两周记'
+title: '上海两周记'
 tags: daily photo
 ---
 

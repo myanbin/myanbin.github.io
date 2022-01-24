@@ -27,7 +27,7 @@ read:
   image: /public/images/napoleon.jpg
 
 photo:
-  name: 相片
+  name: 照片
   image: /public/images/napoleon.jpg
   description: >
     用光与影的艺术，记录精彩瞬间。
