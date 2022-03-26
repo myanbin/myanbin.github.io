@@ -37,12 +37,12 @@
   text-align: center;
   padding: 2rem 1rem;
   color: #c3c3c3;
-  background-color: #202020 !important;
+  background-color: #202020;
   text-align: left;
   width: 20rem;
   background-size: cover;
   background-position: center center;
-  // box-shadow: 0 .15rem 1.75rem 0 rgba(58,59,69,.15) !important;
+  box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0,.25);
 }
 /* make sidebar slightly darker to increase text readability (when using a background image) */
 .sidebar::before {
@@ -166,24 +166,19 @@
   color: #fff;
   display: block;
   line-height: 1.75;
-  padding: .75rem .1rem;
-  border-top: 1px solid rgba(255,255,255,0.2);
+  padding: .25rem .5rem;
+  border-bottom: 1px solid rgba(255,255,255,0.2);
   cursor: pointer;
 }
 
 .sidebar-nav-item:last-child {
-  border-bottom: 1px solid rgba(255,255,255,0.2)
-}
-
-.sidebar-nav-item {
-  padding: .25rem .1rem;
-  margin-left: 0;
-  margin-right: 0
+  border-bottom: none;
 }
 
 .sidebar-nav-item:hover {
   background-color: rgba(255,255,255,0.1);
-  text-decoration: none
+  text-decoration: none;
+  border-radius: 4px;
 }
 
 /* Disable the "white glow" that is used to make the laurel wreaths distinct form the background */
@@ -369,7 +364,7 @@
 
 
 /*
- * Print Styles (by Yanbin Ma)
+ * Print Styles (by Ma Yanbin)
  *
  * - Hide Sidebar elements
  * - Use serif font family
@@ -422,4 +417,121 @@
   .post-data .icon.icon-calendar {
     display: none;
   }
+}
+
+
+
+/**
+ * Home Page Styles
+ *
+ * Post List and more
+ */
+
+/* Related posts */
+.related {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+.related-posts {
+  padding-left: 0;
+  list-style: none;
+}
+.related-posts li {
+  box-sizing: border-box;
+}
+.related-posts .heading {
+  margin-bottom: 0.3rem;
+  font-weight: normal;
+  clear: both;
+}
+
+/*
+ * Dot Leaders (by Ma Yanbin)
+ * https://www.w3.org/Style/Examples/007/leaders.en.html
+ */
+ul.related-posts {
+  padding: 0;
+  overflow-x: hidden;
+  list-style: none;
+}
+
+ul.related-posts .heading::after {
+  float: left;
+  width: 0;
+  white-space: nowrap;
+  content:
+"· · · · · · · · · · · · · · · · · · · · "
+"· · · · · · · · · · · · · · · · · · · · "
+"· · · · · · · · · · · · · · · · · · · · "
+"· · · · · · · · · · · · · · · · · · · · "
+"· · · · · · · · · · · · · · · · · · · · "
+"· · · · · · · · · · · · · · · · · · · · "
+"· · · · · · · · · · · · · · · · · · · · "
+"· · · · · · · · · · · · · · · · · · · · "
+}
+
+ul.related-posts a {
+  background-color: #ffffff;
+  color: #000000;
+}
+ul.related-posts .timestamp {
+  float: right;
+  padding-left: 5px;
+  background-color: #ffffff;
+  position: relative;
+  z-index: 1;
+}
+/* HACK: hover style for dot leaders */
+ul.related-posts li a:hover {
+  text-decoration: none;
+  border-bottom: none;
+}
+ul.related-posts li a:hover > span {
+  border-bottom: 1px solid;
+}
+
+/**
+ * Most Valuable Link (by Ma Yanbin)
+ */
+
+.most-valuable-link {
+  margin-bottom: 1.2rem;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  grid-gap: 10px;
+}
+.most-valuable-link .mvl-link {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  padding-left: 85px;
+  height: 80px;
+  width: 100%;
+  color: inherit;
+}
+.most-valuable-link .mvl-link:hover {
+  background-color: rgba(220, 50, 47, 0.1);
+  border-bottom: 0;
+}
+.most-valuable-link .mvl-link img {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  margin-bottom: 0;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+.most-valuable-link .mvl-link h4 {
+  margin: 0 0 10px 0;
+  line-height: 1.2rem;
+}
+.most-valuable-link .mvl-link div {
+  font-size: 0.9rem;
+  line-height: 1.2rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }

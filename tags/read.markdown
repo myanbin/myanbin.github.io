@@ -1,5 +1,5 @@
 ---
 layout: tag
 tag: read
-permalink: /tags/reading
+permalink: /tags/read
 ---
